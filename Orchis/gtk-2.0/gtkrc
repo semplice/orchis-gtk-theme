@@ -46,17 +46,17 @@ style "murrine-default" {
 
 	GtkPaned::handle-size = 3
 
-	GtkProgressBar::min-horizontal-bar-height = 12
-	GtkProgressBar::min-vertical-bar-width = 12
+	GtkProgressBar::min-horizontal-bar-height = 10
+	GtkProgressBar::min-vertical-bar-width = 10
 
 	GtkRange::trough-border = 0
-	GtkRange::slider-width = 16
+	GtkRange::slider-width = 10
 	GtkRange::stepper-size = 10
 	GtkRange::stepper_spacing = 0
 	GtkRange::trough-under-steppers = 1
 
-	GtkScale::slider-length = 15
-	GtkScale::slider-width = 15
+	GtkScale::slider-length = 10
+	GtkScale::slider-width = 10
 	GtkScale::trough-side-details = 1
 
 	GtkScrollbar::activate-slider = 1
@@ -65,7 +65,7 @@ style "murrine-default" {
 	GtkScrollbar::has-secondary-backward-stepper = 0
 	GtkScrollbar::has-secondary-forward-stepper = 0
 	GtkScrollbar::min-slider-length = 100
-	GtkScrollbar::slider-width = 16
+	GtkScrollbar::slider-width = 12
 	GtkScrollbar::slider-border = 0
 	GtkScrollbar::trough-border = 0
 

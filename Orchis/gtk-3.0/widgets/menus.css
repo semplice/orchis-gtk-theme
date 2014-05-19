@@ -49,28 +49,20 @@ GtkTreeMenu .menuitem *,
 .menuitem,
 .menu .menuitem {
     padding: 6px;
-    border: transparent;
-    border-radius: 0;
-    border-width: 0;
+    border:none;
     /*background-color: transparent;*/
     color: @text;
-    text-shadow: 0 1px @text_shadow;
 
     -GtkMenuItem-arrow-scaling: 0.5;
-}
-
-.menu .menuitem:active,
-.menu .menuitem:hover {
-    border: none;
-    background-color: @selection;
-    /*background-image: none;*/
-    text-shadow: 0 1px @panel_text_shadow;
 }
 
 .menu .menuitem:active,
 .menu .menuitem *:active,
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
+    color: white;
+    border: none;
+    background-color: @selection;
     color: white;
 }
 
@@ -82,13 +74,16 @@ GtkTreeMenu .menuitem *,
 /* Arrow color */
 .menuitem.arrow {
     background-color: @background;
-    color: alpha(@text, 0.6);
+    color: @text;
+    border: none;
 }
 
 /* Separator color */
 .menuitem.separator {
-    padding: 2px 0 2px 0;
+    padding-left: 2px;
+    padding-right: 2px;
     border: none;
+    background-color: @base;
     color: @menu_separator;
     -GtkMenuItem-horizontal-padding: 0;
     -GtkWidget-separator-height: 1;
