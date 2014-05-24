@@ -315,13 +315,8 @@
  ***********/
 
 /* Import App-Specific CSS */
-@import url("apps/baobab.css");
+@import url("apps/elementary-applications.css");
 @import url("apps/fallback-panel.css");
-@import url("apps/gedit.css");
 @import url("apps/gnome-applications.css");
-@import url("apps/gnome-documents.css");
-@import url("apps/gnome-terminal.css");
-@import url("apps/nautilus.css");
-@import url("apps/noise.css");
 @import url("apps/pantheon-applications.css");
 @import url("apps/unity.css");
