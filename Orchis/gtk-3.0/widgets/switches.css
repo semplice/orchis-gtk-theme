@@ -99,9 +99,11 @@ GtkSwitch.slider:backdrop {
 
 GtkSwitch.trough:backdrop,
 GtkSwitch.trough:active:backdrop {
+    border-radius: 1em;
     color: @backdrop_text;
+    background: @backdrop_trough_background;
+    
     border: 1px solid @backdrop_border;
     box-shadow: none;
-    background: @backdrop_trough_background;
     text-shadow: none;
 }
