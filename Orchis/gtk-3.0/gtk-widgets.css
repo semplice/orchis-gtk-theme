@@ -58,8 +58,10 @@
     outline-color: alpha(@text, 0.3);
     outline-style: dashed;
     outline-offset: 2px;
-}
 
+    color: inherit;
+    background-color: inherit;
+}
 
 /* Import Widget CSS */
 @import url("widgets/action-bar.css");
