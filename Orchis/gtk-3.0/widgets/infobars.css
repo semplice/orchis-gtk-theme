@@ -31,8 +31,8 @@ GtkInfoBar {
 .error {
     background-color: @infobar_background;
     color: @infobar_foreground;
-    text-shadow: 0 1px @text_shadow;
-    border-color: darker(@infobar_background);
+    text-shadow: none;
+    border-color: shade(@infobar_background, 0.8);
 }
 
 .info:backdrop,
@@ -40,16 +40,16 @@ GtkInfoBar {
 .question:backdrop,
 .error:backdrop {
     text-shadow: none;
-    background-color: @base;
+    background-color: darker(@backdrop_background);
     color: @backdrop_foreground;
-    border-color: @backdrop_foreground;
+    border-color: @backdrop_border;
 }
 
 .info .button.close,
 .warning .button.close,
 .question .button.close,
 .error .button.close {
-    color: @infobar_fg;
+    color: @infobar_foreground;
     icon-shadow: 0 1px @text_shadow;
 }
 
@@ -67,7 +67,7 @@ GtkInfoBar {
 .warning .button.close:active,
 .question .button.close:active,
 .error .button.close:active {
-    color: @infobar_fg;
+    color: @infobar_foreground;
     background-image: linear-gradient(to bottom,
 				      alpha(black, 0.1),
 				      transparent);
