@@ -315,7 +315,7 @@
  ***********/
 
 /* Import App-Specific CSS */
-@import url("apps/elementary-applications.css");
+@import url("apps/elementary-apps.css");
 @import url("apps/fallback-panel.css");
 @import url("apps/gnome-applications.css");
 @import url("apps/pantheon-applications.css");
