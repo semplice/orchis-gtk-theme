@@ -230,7 +230,7 @@
 
 /* OSD */
 @define-color osd_base @panel;
-@define-color osd_foreground @text;
+@define-color osd_foreground @base;
 @define-color osd_background @panel;
 
 /* Tooltips */
