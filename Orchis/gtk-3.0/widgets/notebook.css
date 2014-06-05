@@ -235,6 +235,7 @@
 /*----- Labels -----*/
 
 .notebook tab GtkLabel {
+    background-color: transparent;
     color: @backdrop_text;
     /*text-shadow: 0px 1px alpha(@base,0.3);*/
     text-shadow: none;
@@ -243,12 +244,15 @@
 .notebook tab:active GtkLabel,
 .notebook .active-page,
 .notebook tab .active-page GtkLabel {
+    background-color: transparent;
     color: @text;
     font-weight: bold;
     text-shadow: 0 1px alpha(@base,0.3);
 }
 
-.notebook tab:backdrop GtkLabel {
+.notebook tab:backdrop GtkLabel,
+.notebook tab GtkLabel:backdrop {
+    background-color: transparent;
     color: @backdrop_text;
     text-shadow: none;
 }
@@ -319,10 +323,31 @@
     icon-shadow: 0 1px alpha (#fff, 0.4);
 }
 
+.dynamic-notebook GtkLabel {
+    background-color: transparent;
+    color: @backdrop_text;
+    /*text-shadow: 0px 1px alpha(@base,0.3);*/
+    text-shadow: none;
+}
+
+.dynamic-notebook GtkLabel:active {
+    background-color: transparent;
+    color: @text;
+    font-weight: bold;
+    text-shadow: 0 1px alpha(@base,0.3);
+}
+
+.dynamic-notebook GtkLabel:backdrop {
+    background-color: transparent;
+    color: @backdrop_text;
+    text-shadow: none;
+}
+
 
 .dynamic-notebook GtkLabel:insensitive,
 .dynamic-notebook .image:insensitive {
-   color: @insensitive_background;
+    background-color: transparent;
+    color: @insensitive_background;
 }
 
 .dynamic-notebook .notebook {
