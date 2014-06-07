@@ -64,13 +64,10 @@ GtkMenuButton.button:active,
 .toolbar .linked.raised GtkMenuButton.button:active,
 .toolbar GtkMenuButton.button.linked.raised:active {
     border: 1px solid @border;
-    border-radius: 6px 6px 0px 0px;
-    border-bottom-width: 0px;
-    background-color: @base;
-    /*background-image: linear-gradient(to bottom,
+    background-image: linear-gradient(to bottom,
                                   @button_active_gradient_a,
                                   @button_active_gradient_b
-                                  );*/
+                                  );
     color: @text;
 }
 

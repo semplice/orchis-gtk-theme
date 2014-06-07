@@ -55,10 +55,14 @@ GtkPopover.osd > .toolbar .button {
     background-color: transparent;
 }
 
-GtkModelButton.button
-{
-    color: @foreground;
+GtkModelButton.button {
+    background-color: transparent;
     background-image: none;
+    border-color: transparent;
+    border-image: none;
+    border-style: none;
+    box-shadow: none;
+    color: @foreground;
 }
 
 GtkModelButton.button:active,
