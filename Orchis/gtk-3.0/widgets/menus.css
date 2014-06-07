@@ -75,7 +75,7 @@ GtkTreeMenu .menuitem *,
     background-color: @background;
     color: @text;
     border: none;
-}me
+}
 
 /* Separator color */
 .menuitem.separator {
