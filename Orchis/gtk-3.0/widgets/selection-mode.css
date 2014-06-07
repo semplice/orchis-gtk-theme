@@ -28,7 +28,7 @@
                                       @selection_toolbar_background_b);
     background-color: transparent;
 
-    border-color: @borders;
+    border-color: @border;
     border-style: solid;
     border-image: none;
 
