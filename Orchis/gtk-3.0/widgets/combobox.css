@@ -57,7 +57,6 @@ GtkCombobox *:selected:backdrop {
     background-color: @backdrop_selected_background
 }
 
-
 GtkComboBox .separator {
     /* always disable separators */
     -GtkWidget-wide-separators: true;
@@ -65,17 +64,50 @@ GtkComboBox .separator {
     -GtkWidget-vertical-separator: 0;
 }
 
+
 /******************
  * Combobox Entry *
  ******************/
-.primary-toolbar GtkComboBox.combobox-entry .entry:first-child,
-.primary-toolbar GtkComboBox.combobox-entry .button:first-child {
+
+GtkComboBox.combobox-entry .entry:selected {
+    color: @selected_foreground;
+    background-color: @selected_background;
+}
+
+GtkComboBox.combobox-entry .entry:insensitive,
+GtkComboBox.combobox-entry .button:insensitive {
+    color: @insensitive_foreground;
+    background-color: @insensitive_background;
+    background-image: none;
+}
+
+GtkComboBox.combobox-entry .entry:backdrop,
+GtkComboBox.combobox-entry .button:backdrop {
+    color: @backdrop_text;
+    background-image: none;
+    background-color: @backdrop_base;
+    border-color: transparent;
+}
+
+GtkComboBox.combobox-entry .entry:insensitive:backdrop,
+GtkComboBox.combobox-entry .button:insensitive:backdrop {
+    color: @backdrop_insensitive_text;
+    background-color: @backdrop_insensitive_background;
+    background-image: none;
+}
+
+
+/******************
+ * Combobox Entry *
+ ******************/
+GtkComboBox.combobox-entry .entry:first-child,
+GtkComboBox.combobox-entry .button:first-child {
     border-radius: 6px 0 0 6px;
     border-right-width: 0;
 }
 
-.primary-toolbar GtkComboBox.combobox-entry .entry:last-child,
-.primary-toolbar GtkComboBox.combobox-entry .button:last-child {
+GtkComboBox.combobox-entry .entry:last-child,
+GtkComboBox.combobox-entry .button:last-child {
     border-radius: 0 6px 6px 0;
     border-left-width: 0;
 }
@@ -91,10 +123,6 @@ GtkComboBox.combobox-entry .button *:active:hover {
 }
 
 
-.primary-toolbar GtkComboBox.combobox-entry .entry,
-.primary-toolbar GtkComboBox.combobox-entry .entry:active,
-.primary-toolbar GtkComboBox.combobox-entry .entry:focus,
-.primary-toolbar GtkComboBox.combobox-entry .entry:insensitive,
 GtkComboBox.combobox-entry .entry,
 GtkComboBox.combobox-entry .entry:active,
 GtkComboBox.combobox-entry .entry:focus,
@@ -104,10 +132,6 @@ GtkComboBox.combobox-entry .entry:insensitive {
     border-bottom-right-radius: 0;
 }
 
-.primary-toolbar GtkComboBox.combobox-entry .button,
-.primary-toolbar GtkComboBox.combobox-entry .button:hover,
-.primary-toolbar GtkComboBox.combobox-entry .button:active,
-.primary-toolbar GtkComboBox.combobox-entry .button:insensitive,
 GtkComboBox.combobox-entry .button,
 GtkComboBox.combobox-entry .button:hover,
 GtkComboBox.combobox-entry .button:active,
@@ -117,9 +141,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 }
 
 GtkComboBox.combobox-entry:insensitive,
-GtkComboBox.combobox-entry .entry:insensitive,
-.primary-toolbar GtkComboBox.combobox-entry:insensitive,
-.primary-toolbar GtkComboBox.combobox-entry .entry:insensitive {
+GtkComboBox.combobox-entry .entry:insensitive {
     color: @insensitive_text;
 }
    

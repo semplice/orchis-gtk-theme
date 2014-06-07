@@ -60,7 +60,6 @@ GtkTreeMenu .menuitem *,
 .menu .menuitem *:active,
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
-    color: white;
     border: none;
     background-color: @selection;
     color: white;
@@ -76,7 +75,7 @@ GtkTreeMenu .menuitem *,
     background-color: @background;
     color: @text;
     border: none;
-}
+}me
 
 /* Separator color */
 .menuitem.separator {
