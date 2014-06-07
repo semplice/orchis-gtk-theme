@@ -32,3 +32,9 @@ generic-border-transparent
 nohl-generic-border-transparent
 generic-border-transparent-dark
 nohl-generic-border-transparent-dark
+button-border-suggested
+button-border-suggested-dark
+selection-toolbar-suggested-button-border
+selection-toolbar-suggested-button-border-dark
+button-border-destructive
+button-border-destructive-dark

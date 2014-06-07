@@ -119,9 +119,8 @@
 
 @define-color suggested_action_button_a shade(@selection, 1.1);
 @define-color suggested_action_button_b shade(@suggested_action_button_a, 0.95);
-@define-color suggested_action_button_border shade(@selection, 0.8);
 @define-color suggested_action_button_foreground white;
-@define-color suggested_action_button_shadow shade(@suggested_action_button_border, 1.15);
+@define-color suggested_action_button_shadow @text_shadow;
 
 
 /**************

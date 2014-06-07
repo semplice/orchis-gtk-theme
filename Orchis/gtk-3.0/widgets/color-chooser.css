@@ -114,7 +114,3 @@ GtkColorEditor GtkColorSwatch.color-light:hover {
     background-image: none;
     border: 1px solid alpha(black, 0.3);
 }
-
-GtkColorButton.button {
-    padding: 2px;
-}
