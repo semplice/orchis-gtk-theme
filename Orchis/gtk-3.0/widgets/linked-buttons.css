@@ -1090,11 +1090,6 @@ GtkLinkButton.button:active {
     border-radius: 3px;
 }
 
-*:link,
-*:visited {
-  color: @link;
-}
-
 GtkLinkButton.button,
 GtkLinkButton.button:active {
     text-shadow: none;
