@@ -22,13 +22,7 @@
 # this program;if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 echo '#----------------------------------------------#'
-echo '#         Orchis GTK Theme Install Script        #'
-echo '#----------------------------------------------#'
-
-echo '#----------------------------------------------#'
-echo '#     NOTE: The main Orchis theme needs          #'
-echo '#     to be installed otherwise many           #'
-echo '#     icons will be missing.                   #'
+echo '#         Orchis GTK Theme Install Script      #'
 echo '#----------------------------------------------#'
 
 function continue {
