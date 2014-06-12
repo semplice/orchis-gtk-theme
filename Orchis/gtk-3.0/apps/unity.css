@@ -106,7 +106,7 @@ UnityPanelWidget,
 	background-color: @panel;
 	background-image: none;
 	color: @panel_text;
-    text-shadow: 1px 0 @panel_text_shadow, -1px 0 @panel_text_shadow, 0 1px @panel_text_shadow, 0 -1px @panel_text_shadow;
+    text-shadow: 1px 0 @panel_text_shadow;
 }
 
 .unity-panel.menuitem,
@@ -118,11 +118,14 @@ UnityPanelWidget,
 
 .unity-panel.menubar,
 .unity-panel .menubar {
+    color: @panel_text;
+    text-shadow: 1px 0 @panel_text_shadow;
 }
 
 .unity-panel.menubar:backdrop,
 .unity-panel .menubar *:backdrop {
     color: @backdrop_foreground;
+    text-shadow: 1px 0 @panel_text_shadow;
 }
 
 .unity-panel.menubar.menuitem,
