@@ -93,6 +93,18 @@
     color: @insensitive_text;
 }
 
+.dynamic-notebook .notebook .button:hover {
+    background-color: alpha (#000, 0.05);
+    border-color: alpha (#000, 0.25);
+    box-shadow: inset 0 0 0 1px alpha (#000, 0.05);
+    color: shade (@text, 1.10);
+}
+
+.dynamic-notebook .notebook .button:hover:active {
+    background-color: alpha (#000, 0.10);
+}
+
+
 .dynamic-notebook GtkLabel {
     background-color: transparent;
     color: @text;
