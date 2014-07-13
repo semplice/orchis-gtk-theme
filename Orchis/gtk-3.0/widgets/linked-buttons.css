@@ -94,7 +94,7 @@
 .toolbar .raised.linked .button:backdrop,
 .inline-toolbar.toolbar .button:backdrop,
 .inline-toolbar.toolbar GtkToolButton > .button:backdrop {
-    box-shadow: inset -1px 0 @backdrop_border;
+    box-shadow: none;
 }
 
 .linked .button:insensitive:backdrop,
@@ -102,7 +102,7 @@
 .toolbar .raised.linked .button:insensitive:backdrop,
 .inline-toolbar.toolbar .button:insensitive:backdrop,
 .inline-toolbar.toolbar GtkToolButton > .button:insensitive:backdrop {
-    box-shadow: inset -1px 0 @backdrop_insensitive_border;
+    box-shadow: none;
 }
 
 /* remove box shadow from last-child and only-child */
@@ -281,13 +281,13 @@
 .linked.vertical .button:backdrop,
 .inline-toolbar.toolbar.vertical .button:backdrop,
 .inline-toolbar.toolbar.vertical GtkToolButton > .button:backdrop {
-    box-shadow: inset 0 -1px @backdrop_border;
+    box-shadow: none;
 }
 
 .linked.vertical .button:insensitive:backdrop,
 .inline-toolbar.toolbar.vertical .button:insensitive:backdrop,
 .inline-toolbar.toolbar.vertical GtkToolButton > .button:insensitive:backdrop {
-    box-shadow: inset 0 -1px @backdrop_insensitive_border;
+    box-shadow: none;
 }
 
 .linked.vertical .button:only-child,
