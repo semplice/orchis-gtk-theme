@@ -132,23 +132,7 @@
 }
 
 
-.dynamic-notebook .notebook tab:nth-child(first) {
-    border-width: 0;
-    border-image: linear-gradient(to bottom,
-                                  transparent,
-                                  alpha (#000, 0.20)
-                                  ) 0 1 0 1;
-}
-
 .dynamic-notebook .notebook tab {
-    background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.10),
-                                  alpha (#000, 0.00) 10%
-                                  ),
-                        linear-gradient(to bottom,
-                                  shade (@background, 0.8),
-                                  shade (@background, 0.9)
-                                  );
     text-shadow: 0 1px @text_shadow;
     icon-shadow: 0 1px @text_shadow;
     color: @text;
