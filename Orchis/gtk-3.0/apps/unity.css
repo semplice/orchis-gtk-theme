@@ -70,13 +70,13 @@ UnityDecoration.top:backdrop {
 
 UnityDecoration.left,
 UnityDecoration.right {
-    background-color: transparent;
+    /*background-color: transparent;*/
     background-size: 1px;
     background-repeat: repeat-x;
-    background-image: -gtk-gradient (linear, left top, left bottom,
+    /*background-image: -gtk-gradient (linear, left top, left bottom,
                                      color-stop (0, @panel),
                                      color-stop (0.5, @border),
-                                     color-stop (1, @border));
+                                     color-stop (1, @border));*/
     background-image: none;
 }
 
@@ -90,11 +90,11 @@ UnityDecoration.right:backdrop,
 UnityDecoration.bottom:backdrop {
     background-color: alpha(white,0.4);
     color: shade(@panel_text, 0.99);
-    /*background-image: -gtk-gradient (linear, left top, left bottom,
+    background-image: -gtk-gradient (linear, left top, left bottom,
                                      color-stop (0, @backdrop_panel),
                                      color-stop (0.5, @backdrop_border),
-                                     color-stop (1, @backdrop_border));*/
-    background-image: none;
+                                     color-stop (1, @backdrop_border));
+    /*background-image: none;*/
 }
 
 /***************
@@ -108,6 +108,7 @@ UnityPanelWidget,
 	background-image: none;
 	color: @panel_text;
     text-shadow: 1px 0 @panel_text_shadow;
+    box-shadow: none;
 }
 
 .unity-panel.menuitem,
@@ -115,12 +116,14 @@ UnityPanelWidget,
     border-width: 0 1px;
     text-shadow: 1px 0 @panel_text_shadow;
     color: @panel_text;
+    box-shadow: none;
 }
 
 .unity-panel.menubar,
 .unity-panel .menubar {
     color: @panel_text;
     text-shadow: 1px 0 @panel_text_shadow;
+    box-shadow: none;
 }
 
 .unity-panel.menubar:backdrop,
@@ -134,10 +137,11 @@ UnityPanelWidget,
     padding: 3px 5px;
     border-width: 1px;
     border-style: solid;
-    border: 1px solid transparent;
+    border: none;
     background-color: transparent;
     background-image: none;
     color: @panel_text;
+    box-shadow: none;
 }
 
 .unity-panel.menubar.menuitem:hover,

@@ -223,7 +223,9 @@ ConversationListView.view.cell:selected {
 }
  
 .search-item {
-    border-width: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid alpha(@selection, 0.4);
     border-radius: 0;
     box-shadow: none;
 }
@@ -231,9 +233,9 @@ ConversationListView.view.cell:selected {
 .search-item:hover,
 .search-item:focus {
     background-color: @selection;
-    color: @selected_fg_color;
-    text-shadow: 0 1px 1px alpha (#000, 0.25);
-    icon-shadow: 0 1px 1px alpha (#000, 0.25);
+    color: @selected_foreground;
+    text-shadow: 0 1px @text_shadow;
+    icon-shadow: 0 1px @text_shadow;
 }
  
 .search-entry-large,
@@ -247,7 +249,9 @@ ConversationListView.view.cell:selected {
 }
  
 .search-category-header {
-        color: #808080;
+    font-style: bold;
+    color: @text;
+    text-shadow: 0 1px @text_shadow;
 }
 
 /*********
@@ -256,7 +260,7 @@ ConversationListView.view.cell:selected {
 
 .panel {
     background-color: transparent;
-    color: #fff;
+    color: @base;
     font-weight: bold;
     text-shadow: 0px 1px @text_shadow;
     icon-shadow: none;
