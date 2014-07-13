@@ -87,6 +87,7 @@ GtkDialog .sidebar .view:selected,
 GtkDialog .sidebar .view:prelight:selected {
     background-image: none;
     background-color: alpha (#000, 0.05);
+    color: @text;
 
     border-image: linear-gradient(to bottom,
                                   alpha (#000, 0.15),
