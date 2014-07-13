@@ -255,8 +255,8 @@
  * Infobar colors *
  ******************/
 
-@define-color infobar_background shade(#a348b1, 1.5);
-@define-color infobar_foreground @base;
+@define-color infobar_background shade(@selection, 1.1);
+@define-color infobar_foreground white;
 
 @define-color link #a348b1;
 @define-color question #60ade8;

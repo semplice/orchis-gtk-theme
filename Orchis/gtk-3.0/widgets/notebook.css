@@ -28,8 +28,8 @@
 
     background-clip: border-box;
 
-    text-shadow: 0 1px alpha (#fff, 0.4);
-    icon-shadow: 0 1px alpha (#fff, 0.4);
+    text-shadow: 0 1px @text_shadow;
+    icon-shadow: 0 1px @text_shadow;
     
 }
 .notebook.header {

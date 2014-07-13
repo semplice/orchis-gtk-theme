@@ -49,8 +49,8 @@
     background-color: transparent;
     border:none;
 
-    text-shadow: 0 1px alpha (#fff, 0.4);
-    icon-shadow: 0 1px alpha (#fff, 0.4);
+    text-shadow: 0 1px @text_shadow;
+    icon-shadow: 0 1px @text_shadow;
 }
 
 
@@ -158,8 +158,8 @@
                                   shade (@background, 0.8),
                                   shade (@background, 0.9)
                                   );
-    text-shadow: 0 1px alpha (#fff, 0.4);
-    icon-shadow: 0 1px alpha (#fff, 0.4);
+    text-shadow: 0 1px @text_shadow;
+    icon-shadow: 0 1px @text_shadow;
     color: @text;
 }
 
@@ -172,8 +172,8 @@
                                   shade (@background, 0.8),
                                   shade (@background, 0.9)
                                   );
-    text-shadow: 0 1px alpha (#fff, 0.4);
-    icon-shadow: 0 1px alpha (#fff, 0.4);
+    text-shadow: 0 1px @text_shadow;
+    icon-shadow: 0 1px @text_shadow;
     color: @text;
 }
 

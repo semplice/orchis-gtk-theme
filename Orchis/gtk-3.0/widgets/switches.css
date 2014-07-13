@@ -24,7 +24,7 @@
 GtkSwitch {
     border-radius: 1em;
     font: condensed;
-    box-shadow: 0 0 0 1px alpha (#fff, 0.03),
+    box-shadow: 0 0 0 1px alpha (#fff, 0.03);
 }
 
 /* Normal */

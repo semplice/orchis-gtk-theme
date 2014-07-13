@@ -149,7 +149,8 @@ BirdieWidgetsTweetList * {
 MarlinViewChromeLocationBar .button:focus {
     box-shadow: inset 0 0 0 1px alpha (@selection, 0.23),
                 0 1px 0 alpha (#fff, 0.30);
-    border-color: alpha (@selection, 0.80);
+    border-color: @border;
+    icon-shadow:none;
 }
 
 MarlinViewChromeLocationBar .button:active {
@@ -157,6 +158,7 @@ MarlinViewChromeLocationBar .button:active {
     background-color: transparent;
     border-color: alpha (@selection, 0.80);
     box-shadow: inset 0 0 0 1px alpha (@selection, 0.23);
+    icon-shadow:none;
 }
 
 /********

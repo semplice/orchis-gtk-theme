@@ -61,3 +61,23 @@ GraniteWidgetsPopOver .button:hover:active {
     background-color: alpha (#000, 0.05);
     border-color: shade (@base, 0.74);
 }
+
+
+/***********
+ * Welcome *
+ **********/
+
+GraniteWidgetsWelcome {
+    background-color: @base;
+}
+
+GraniteWidgetsWelcome GtkLabel {
+    color: @placeholder_text_color;
+    font: open sans 11;
+    text-shadow: none;
+}
+
+GraniteWidgetsWelcome .h1,
+GraniteWidgetsWelcome .h3 {
+    color: alpha(@text_color, 0.8);
+}

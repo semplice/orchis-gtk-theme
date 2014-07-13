@@ -103,7 +103,7 @@ GtkTreeMenu .menuitem *,
 /* Accelerators */
 .menuitem .accelerator,
 .menuitem .accelerator:insensitive {
-    color: @insensitive_text;
+    color: alpha(@text, 0.7);
     text-shadow:none;
 }
 
