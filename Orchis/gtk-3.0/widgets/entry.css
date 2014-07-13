@@ -50,17 +50,20 @@
 .entry:backdrop {
     background: none;
     color: @backdrop_text;
+    box-shadow: none;
 }
 
 .entry:insensitive:backdrop {
     color: @backdrop_text;
     box-shadow: none;
     background-color: @backdrop_insensitive_background;
+    box-shadow: none;
 }
 
 .entry:selected:backdrop {
     color: @backdrop_selected_foreground;
-    background-color: @backdrop_selected_background
+    background-color: @backdrop_selected_background;
+    box-shadow: none;
 }
 
 
