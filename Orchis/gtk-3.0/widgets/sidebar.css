@@ -27,7 +27,7 @@
 .source-list.view
 .sidebar GtkScrolledWindow {
     background-color: @background;
-    color: @foreground;   
+    color: @text;   
     border: solid @border;
     border-width: 0;
 }
@@ -38,6 +38,13 @@
     -GtkTreeView-vertical-separator: 6px;
 }
 
+
+/* Dialog */
+GtkDialog .sidebar,
+GtkDialog .sidebar .view,
+GtkDialog .sidebar GtkScrolledWindow {
+    background-color: shade (@background, 1.07);
+}
 
 /* Separator */
 .sidebar.view.separator,
@@ -56,8 +63,10 @@
 .source-list.view,
 .source-list.view:selected:backdrop,
 .source-list.view:prelight:selected:backdrop {
-    text-shadow: none;
-    icon-shadow: none;
+    /*text-shadow: none;*/
+    /*icon-shadow: none;*/
+    text-shadow: 0 1px alpha (#fff, 0.4);
+    icon-shadow: 0 1px alpha (#fff, 0.4);
 }
 
 /* Frame */
@@ -162,4 +171,35 @@
     box-shadow: none;
     text-shadow: none;
     icon-shadow: none;
+}
+
+
+.source-list.badge,
+.source-list.badge:prelight,
+.source-list.badge:selected,
+.source-list.badge:selected:focus,
+.source-list.badge:prelight:selected {
+    background-image: none;
+    background-color: alpha (#000, 0.4);
+    color: @background;
+    border-radius: 10px;
+    padding: 0 6px;
+    margin: 0 3px;
+    text-shadow: 0 1px alpha (#000, 0.1);
+    icon-shadow: 0 1px alpha (#000, 0.1);
+    border-width: 0;
+}
+
+.source-list.badge:selected,
+.source-list.badge:prelight:selected {
+    color: @background;
+}
+
+.source-list.badge:selected:backdrop,
+.source-list.badge:selected:prelight:backdrop {
+    background-image: none;
+    background-color: alpha (#000, 0.2);
+    color: shade (@background, 0.95);
+    text-shadow: 0 1px alpha (#000, 0.1);
+    icon-shadow: 0 1px alpha (#000, 0.1);
 }

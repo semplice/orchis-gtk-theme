@@ -16,14 +16,6 @@
 * with the Orchis GTK theme. If not, see http://www.gnu.org/licenses/.
 */
 
-/*************
- * Statusbar *
- ************/
-
-GraniteWidgetsStatusBar {
-    background-color: purple;
-    background-image: none;
-}
 
 /***********
  * Popover *
@@ -45,9 +37,9 @@ GraniteWidgetsPopOver {
     background-color: transparent;
 
     background-image: linear-gradient(to bottom,
-                                  alpha (#f9f9f9, 0.97),
-                                  alpha (#f9f9f9, 0.97) 80%,
-                                  alpha (#f0f0f0, 0.97)
+                                  alpha (@base, 0.97),
+                                  alpha (shade(@base, 1.1), 0.97) 80%,
+                                  alpha (shade(@base, 1.2), 0.97)
                                   );
 
     border: 1px solid alpha (#000, 0.3);
@@ -68,17 +60,4 @@ GraniteWidgetsPopOver .button:hover:active {
     background-image: none;
     background-color: alpha (#000, 0.05);
     border-color: shade (@base, 0.74);
-}
-
-.button.app {
-    border-width: 0;
-    border-radius: 5px;
-    box-shadow: none;
-}
-
-.app:hover {
-    background-color: alpha (#000, 0.08);
-}
-.app:focus {
-    background-color: alpha (#000, 0.20);
 }

@@ -16,43 +16,64 @@
 * with the Orchis GTK theme. If not, see http://www.gnu.org/licenses/.
 */
 
+
+
 /*********
  * Noise *
  ********/
 
 .album-list-view,
-.album-list-view GtkLabel,
-.album-list-view:backdrop,
-.album-list-view GtkLabel:backdrop {
+.album-list-view GtkLabel {
     background-color: @background;
-    color: @selected_foreground;
+    color: @text;
     border-radius: 0;
     border-color: @border;
 }
 
-.album-list-view GtkTreeView,
-.album-list-view GtkTreeView:backdrop {
-    background-color: @background;
+.album-list-view:backdrop,
+.album-list-view GtkLabel:backdrop {
     background-color: @backdrop_background;
-    color: @selected_foreground;
+    color: @text;
+    border-radius: 0;
+    border-color: @backdrop_border;
+}
+
+.album-list-view GtkTreeView {
+    background-color: @background;
+    color: @text;
     -GtkTreeView-vertical-separator: 3;
     -GtkTreeView-grid-line-width: 0;
 }
 
-.album-list-view GtkTreeView row:nth-child(even),
-.album-list-view GtkTreeView row:nth-child(even):backdrop {
-    background-image: none;
-    background-color: @foreground;
-    border-width: 1px;
-    border-style: solid;
-    border-color: @border;
+.album-list-view GtkTreeView:backdrop {
+    background-color: @backdrop_background;
+    color: @backdrop_text;
+    -GtkTreeView-vertical-separator: 3;
+    -GtkTreeView-grid-line-width: 0;
 }
 
+.album-list-view GtkTreeView row:nth-child(even) {
+    background-image: none;
+    background-color: @text;
+    border: 1px solid @border;
+}
 
-.album-list-view GtkTreeView row:nth-child(odd),
-.album-list-view GtkTreeView row:nth-child(odd):backdrop {
+.album-list-view GtkTreeView row:nth-child(even):backdrop {
+    background-image: none;
+    background-color: @backdrop_text;
+    border: 1px solid @backdrop_border;
+}
+
+.album-list-view GtkTreeView row:nth-child(odd) {
     background-image: none;
     background-color: @background;
+    border-width: 0px;
+    border-style: none;
+}
+
+.album-list-view GtkTreeView row:nth-child(odd):backdrop {
+    background-image: none;
+    background-color: @backdrop_background;
     border-width: 0px;
     border-style: none;
 }
@@ -102,47 +123,40 @@ BirdieWidgetsTweetList * {
                                   );
 }
 
+/**********
+ * Notify *
+ *********/
+
+.notify {
+    /*-notify-shadow: 0px 2px 18px alpha (#000, 0.60);*/
+
+    border-radius: 5px;
+    border: 1px solid alpha (#000, 0.30);
+
+    background-color: alpha (#f8f8f8, 0.95);
+}
+
+.notify .low {
+}
+
+.notify .critical {
+}
+
 /********
 * Files *
 ********/
 
-MarlinViewChromeLocationBar .button {
-    background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.10),
-                                  transparent 5px
-                                  ),
-                        linear-gradient(to bottom,
-                                  shade (@base, 0.90),
-                                  @base
-                                  );
-
-    border: 1px solid alpha (#000, 0.27);
-    border-radius: 2.5px;
-
-    box-shadow: inset 0 0 0 1px @inset_dark,
-                0 1px 0 1px alpha (#fff, 0.30);
-                
-    color: @text;
-
-    icon-shadow: 0 1px alpha (#fff, 0.4);
-    text-shadow: 0 1px alpha (#fff, 0.4);
-
-    padding: 4px;
-
-    transition: all 200ms ease-out;
-}
-
 MarlinViewChromeLocationBar .button:focus {
-    box-shadow: inset 0 0 0 1px alpha (@selected_background, 0.23),
-                0 1px 0 1px alpha (#fff, 0.30);
-    border-color: alpha (@selected_background, 0.80);
+    box-shadow: inset 0 0 0 1px alpha (@selection, 0.23),
+                0 1px 0 alpha (#fff, 0.30);
+    border-color: alpha (@selection, 0.80);
 }
 
 MarlinViewChromeLocationBar .button:active {
     background-image: none;
     background-color: transparent;
-    border-color: alpha (@selected_background, 0.80);
-    box-shadow: inset 0 0 0 1px alpha (@selected_background, 0.23);
+    border-color: alpha (@selection, 0.80);
+    box-shadow: inset 0 0 0 1px alpha (@selection, 0.23);
 }
 
 /********
@@ -176,13 +190,62 @@ ConversationListView.view.cell:selected {
     border-radius: 5px;
     border: 1px solid alpha (#000, 0.30);
 
-    background-color: alpha (#f8f8f8, 0.95);
+    background-color: alpha (#f7f7f7, 0.95);
 }
 
 .notify .low {
 }
 
 .notify .critical {
+}
+
+
+/*************
+ * Slingshot *
+ ************/
+
+.button.app {
+    border: none;
+    border-radius: 1.5em;
+    box-shadow: none;
+}
+
+.button.app:hover,
+.app:hover {
+    background-color: alpha(@selection, 0.2);
+    border: 1px solid alpha(@selection, 0.4);
+}
+
+.app:focus {
+    background-color: alpha (#000, 0.20);
+}
+ 
+.search-item {
+    border-width: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.search-item:hover,
+.search-item:focus {
+    background-color: @selection;
+    color: @selected_fg_color;
+    text-shadow: 0 1px 1px alpha (#000, 0.25);
+    icon-shadow: 0 1px 1px alpha (#000, 0.25);
+}
+ 
+.search-entry-large,
+.search-entry-large:focus {
+        border: none;
+        padding: 8px;
+        background-image: none;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+}
+ 
+.search-category-header {
+        color: #808080;
 }
 
 /*********

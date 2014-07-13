@@ -113,9 +113,9 @@
 @define-color button_backdrop_gradient_b @backdrop_background;
 
 @define-color button_active_text @active_text;
-@define-color button_active_text_shadow alpha(@base, 0.2);
+@define-color button_active_text_shadow alpha(black, 0.2);
 
-@define-color button_text_shadow alpha(@base, 0.2);
+@define-color button_text_shadow alpha(black, 0.2);
 
 
 /**************
@@ -294,10 +294,10 @@
  ******/
 @define-color wm_title @text;
 @define-color wm_backdrop_title @backdrop_foreground;
-@define-color wm_highlight #ffffff;
-@define-color wm_title_highlight_dark alpha(#ffffff, 0.2);
-@define-color wm_title_highlight #ffffff;
-@define-color wm_title_shadow @wm_title_highlight;
+@define-color wm_highlight white;
+@define-color wm_title_highlight_dark alpha(white, 0.2);
+@define-color wm_title_highlight white;
+@define-color wm_title_shadow alpha(black, 0.2);
 
 @define-color wm_gradient_a @gradient_a;
 @define-color wm_gradient_b @gradient_b;

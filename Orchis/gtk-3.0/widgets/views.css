@@ -9,7 +9,7 @@
 
 .frame:backdrop {
     border-color: @backdrop_border;
-    background-color: transparent;
+    background-color: @backdrop_background;
     color: @backdrop_text;
 }
 

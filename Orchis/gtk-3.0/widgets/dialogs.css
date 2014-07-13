@@ -22,69 +22,49 @@
 
 .prompt,
 GtkMessageDialog {
-    -GtkDialog-content-area-border: 0;
-    -GtkDialog-action-area-border: 0;
     -GtkDialog-button-spacing: 0;
-    margin: 0;
-    padding: 0;
+    -GtkDialog-content-area-border: 12px;
 }
 
-.dialog-action-area.linked .button,
-.dialog-action-area.linked .button:active,
-.dialog-action-area.linked .button:active:hover,
-.dialog-action-area.linked .button:insensitive,
-.dialog-action-area.linked .button:only-child,
-.dialog-action-area.linked .button:active:only-child,
-.dialog-action-area.linked .button:active:hover:only-child,
-.dialog-action-area.linked .button:insensitive:only-child,
-.dialog-action-area.linked .button:first-child,
-.dialog-action-area.linked .button:active:first-child,
-.dialog-action-area.linked .button:active:hover:first-child,
-.dialog-action-area.linked .button:insensitive:first-child,
-.dialog-action-area.linked .button:last-child,
-.dialog-action-area.linked .button:active:last-child,
-.dialog-action-area.linked .button:active:hover:last-child,
-.dialog-action-area.linked .button:insensitive:last-child {
-    border-style: solid;
-    border-radius: 0;
-    border-width: 1px 0 0px 0;
-    border-color: @border;
-    border-image: none;
+GtkMessageDialog .button {
+    padding: 6px;
 }
 
-.dialog-action-area.linked .button:only-child,
-.dialog-action-area.linked .button:active:only-child,
-.dialog-action-area.linked .button:active:hover:only-child,
-.dialog-action-area.linked .button:insensitive:only-child,
-.dialog-action-area.linked .button:last-child,
-.dialog-action-area.linked .button:active:last-child,
-.dialog-action-area.linked .button:active:hover:last-child,
-.dialog-action-area.linked .button:insensitive:last-child {
-    /*border-right-width: 1px;*/
+GtkDialog .titlebar,
+GtkMessageDialog .titlebar {
+    border: none;
+
+    background-image: none;
+    background-color: @background;
+
+    box-shadow: inset 1px 0 0 0 alpha (#fff, 0.20),
+                inset -1px 0 0 0 alpha (#fff, 0.20),
+                inset 0 1px 0 0 #fff;
 }
 
-.dialog-action-area.linked .button:only-child,
-.dialog-action-area.linked .button:active:only-child,
-.dialog-action-area.linked .button:active:hover:only-child,
-.dialog-action-area.linked .button:insensitive:only-child,
-.dialog-action-area.linked .button:first-child,
-.dialog-action-area.linked .button:active:first-child,
-.dialog-action-area.linked .button:active:hover:first-child,
-.dialog-action-area.linked .button:insensitive:first-child {
-    /*border-left-width: 1px;*/
+GtkDialog .titlebar:backdrop,
+GtkMessageDialog .titlebar:backdrop {
+    border: none;
+
+    background-image: none;
+    background-color: @background;
+
+    box-shadow: inset 1px 0 0 0 alpha (#fff, 0.20),
+                inset -1px 0 0 0 alpha (#fff, 0.20),
+                inset 0 1px 0 0 #fff;
+
+    color: shade (@text, 1.20);
 }
 
-.dialog-action-area.linked .button.default,
-.dialog-action-area.linked .button.default:active,
-.dialog-action-area.linked .button.default:insensitive,
-.dialog-action-area.linked .button:focus {
-    border-color: @selection;
-    border-width: 1px;
-    -GtkWidget-focus-line-width: 0;
+GtkDialog,
+GtkMessageDialog {
+    box-shadow: inset 1px 0 0 0 alpha (#fff, 0.20),
+                inset -1px 0 0 0 alpha (#fff, 0.20),
+                inset 0 -1px 0 0 alpha (#fff, 0.30);
+
 }
 
-.dialog-action-area.linked .button.suggested-action,
-.dialog-action-area.linked .button.suggested-action:active,
-.dialog-action-area.linked .button.suggested-action:insensitive {
-    box-shadow: none;
+GtkDialog .toolbar {
+    background-image: none;
+    background-color: @background;
 }

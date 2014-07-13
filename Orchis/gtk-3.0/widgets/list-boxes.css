@@ -58,7 +58,7 @@ EggListBox:selected {
 }
 
 .content-view.view:backdrop {
-    background-color: @sidebar_background_backdrop;
+    background-color: @background_backdrop;
     background-image: none;
 }
 

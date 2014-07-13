@@ -38,7 +38,11 @@ GtkCalendar.header {
     border-width: 0;
 }
 
-GtkCalendar.button,
+GtkCalendar.button {
+    background-color: @selection;
+    color: @selected_foreground;
+}
+
 GtkCalendar.button:insensitive,
 GtkCalendar.button:backdrop,
 GtkCalendar.button:insensitive:backdrop {

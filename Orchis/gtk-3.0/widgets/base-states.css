@@ -27,6 +27,7 @@
 
 .background:backdrop {
     /* I want everything nice and flat in the backdrop window */
+    background-color: @backdrop_background;
     text-shadow: none;
     icon-shadow: none;
 
