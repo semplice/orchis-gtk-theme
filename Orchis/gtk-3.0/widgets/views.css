@@ -142,7 +142,6 @@ GtkIconView.view.cell:selected:focus {
     color: @selected_foreground;
 }
 
-
 GdMainIconView.content-view {
     -GdMainIconView-icon-size: 64px;
 }
@@ -167,6 +166,7 @@ GtkIconView.content-view.check:selected {
  ****************/
 .content-view.view {
     background-color: @base;
+    color: @text;
 }
 
 .content-view.view:hover {
@@ -187,6 +187,29 @@ GtkIconView.content-view.check:selected {
 .content-view.view.check:active {
     background-color: transparent;
 }
+
+.content-view column-header .button {
+    border-width: 0 0 1px 1px;
+
+    background-image: linear-gradient(to bottom,
+                              @button_gradient_a,
+                              @button_gradient_b
+                              );
+
+    border-color: @border;
+}
+
+.content-view .title,
+.content-view .option-title {
+    color: @text;
+    text-shadow: 0 1px alpha (#fff, 0.3);
+}
+
+.content-view .subtitle,
+.content-view .option-description {
+    color: alpha (@text, 0.5);
+    text-shadow: 0 1px alpha (#fff, 0.4);
+} 
 
 /* Drawing area */
 GtkDrawingArea {

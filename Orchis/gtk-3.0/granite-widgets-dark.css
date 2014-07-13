@@ -51,7 +51,7 @@ GraniteWidgetsPopOver * {
 
 GraniteWidgetsPopOver .button {
     background-image: none;
-    background-color: transparent;    
+    background-color: transparent; 
 }
 
 GraniteWidgetsPopOver .button:active,

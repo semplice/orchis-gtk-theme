@@ -186,7 +186,7 @@ GtkInfoBar .button:hover:active {
 GtkInfoBar .button:insensitive,
 GtkInfoBar .button:hover:insensitive {
     background-image: none;
-    background-color: transparent;    
+    background-color: transparent; 
 
     border-color: alpha (#000, 0.18);
 }

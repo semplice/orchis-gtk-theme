@@ -2,7 +2,8 @@
  * Tooltips *
  ************/
  
-.tooltip {
+.tooltip,
+.overlay-bar {
     padding: 4px;
     border-style: none;
     border-radius: 5px;
@@ -15,4 +16,10 @@
 
 .tooltip * {
     background-color: transparent;
+}
+
+.tooltip GtkLabel,
+.overlay-bar GtkLabel {
+    color: white;
+    text-shadow: 0 1px alpha (#000, 0.6);
 }

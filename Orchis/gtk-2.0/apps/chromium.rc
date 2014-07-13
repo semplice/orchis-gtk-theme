@@ -10,7 +10,7 @@ style "chromium-toolbar-button" {
 
 style "chrome-gtk-frame" {
   ChromeGtkFrame::frame-color = @bg_color
-  ChromeGtkFrame::inactive-frame-color = shade (0.7, @bg_color)
+  ChromeGtkFrame::inactive-frame-color = shade (1.1, @bg_color)
 
   ChromeGtkFrame::frame-gradient-size = 0
   ChromeGtkFrame::frame-gradient-color = @menubar_bg_color

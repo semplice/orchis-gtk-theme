@@ -15,21 +15,39 @@
 * You should have received a copy of the GNU General Public License along
 * with the Orchis GTK theme. If not, see http://www.gnu.org/licenses/.
 */
-
-/*************************
- * Sidebar & Source list *
- *************************/
+/************************
+* Sidebar & Source List *
+************************/
 
 .sidebar,
-.sidebar.view,
 .sidebar .view,
+.sidebar GtkScrolledWindow,
 .source-list,
-.source-list.view
-.sidebar GtkScrolledWindow {
+.source-list.view {
     background-color: @background;
-    color: @text;   
-    border: solid @border;
-    border-width: 0;
+    color: @text;
+}
+
+.sidebar .separator {
+    color: transparent;
+}
+
+GtkDialog .sidebar,
+GtkDialog .sidebar .view,
+GtkDialog .sidebar GtkScrolledWindow {
+    background-color: shade (@background, 1.07);
+}
+
+.sidebar,
+.sidebar .view,
+.sidebar .view:selected:backdrop,
+.sidebar .view:prelight:selected:backdrop,
+.source-list,
+.source-list.view,
+.source-list.view:selected:backdrop,
+.source-list.view:prelight:selected:backdrop {
+    text-shadow: none;
+    icon-shadow: none;
 }
 
 .sidebar,
@@ -38,141 +56,85 @@
     -GtkTreeView-vertical-separator: 6px;
 }
 
-
-/* Dialog */
-GtkDialog .sidebar,
-GtkDialog .sidebar .view,
-GtkDialog .sidebar GtkScrolledWindow {
-    background-color: shade (@background, 1.07);
-}
-
-/* Separator */
-.sidebar.view.separator,
-.view.separator,
-.separator {
-    border: none;
+.source-list.category-expander {
     color: transparent;
 }
 
-/* Shadows */
-.sidebar,
-.sidebar.view,
-.sidebar.view:selected:backdrop,
-.sidebar.view:prelight:selected:backdrop,
-.source-list,
-.source-list.view,
-.source-list.view:selected:backdrop,
-.source-list.view:prelight:selected:backdrop {
-    /*text-shadow: none;*/
-    /*icon-shadow: none;*/
-    text-shadow: 0 1px alpha (#fff, 0.4);
-    icon-shadow: 0 1px alpha (#fff, 0.4);
+.sidebar .view:prelight,
+.source-list.view:prelight {
+    background-color: shade (@background, 1.10);
 }
 
-/* Frame */
-.sidebar .frame {
-    border: solid @border;
-    border-width: 0px 1px 1px 1px;
-}
-
-.sidebar .frame:insensitive {
-    border-color: @insensitive_border;
-}
-
-.sidebar .frame:backdrop {
-    background-color: @backdrop_background;
-    border-color: @backdrop_border;
-    color: @backdrop_text;
-}
-
-/* Insensitive */
-.sidebar:insensitive,
-.sidebar.view:insensitive,
-.sidebar.view:hover:insensitive,
-.sidebar .view:insensitive,
-.sidebar .view:hover:insensitive,
-.source-list.view:insensitive,
-.source-list.view:hover:insensitive,
-.source-list.view:focus:insensitive,
-.source-list.category-expander:hover {
-
-    color: @insensitive_text;
-    background: @insensitive_background;
-    border: none;
-    box-shadow: none;
-    text-shadow: none;
-    icon-shadow: none;
-}
-
-
-/* Backdrop */
-.sidebar:backdrop,
-.sidebar.view:backdrop,
-.sidebar.view:hover:backdrop,
-.sidebar .view:backdrop,
-.sidebar .view:hover:backdrop,
-.source-list.view:backdrop,
-.source-list.view:hover:backdrop,
-.source-list.view:focus:backdrop,
-.source-list.category-expander:hover {
-
-    color: @backdrop_text;
-    background: @backdrop_background;
-    border: none;
-    box-shadow: none;
-    text-shadow: none;
-    icon-shadow: none;
-}
-
-/* Selected */
-.sidebar.view:selected,
-.sidebar.view:hover:selected,
 .sidebar .view:selected,
-.sidebar .view:hover:selected,
+.sidebar .view:prelight:selected,
+.sidebar.view:selected,
+.sidebar.view:prelight:selected,
 .source-list.view:selected,
-.source-list.view:hover:selected,
-.source-list.view:focus:selected,
+.source-list.view:prelight:selected,
+.source-list.view:selected:focus,
 .source-list.category-expander:hover {
 
     color: white;
-    border: none;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
 
-    background: @selection;
-    box-shadow: none;
-    text-shadow:none;
-    icon-shadow:none;
+    background-color: @selection;
+    box-shadow: inset 0 1px 0 0 alpha (#000, 0.03),
+                inset 0 -1px 0 0 alpha (#000, 0.10);
 }
 
-/* Hover */
-.sidebar.view:hover,
-.sidebar .view:hover,
-.source-list.view:hover,
-.source-list.view:focus:hover,
-.source-list.category-expander:hover {
+GtkDialog .sidebar .view:selected,
+GtkDialog .sidebar .view:prelight:selected {
+    background-image: none;
+    background-color: alpha (#000, 0.05);
+
+    border-image: linear-gradient(to bottom,
+                                  alpha (#000, 0.15),
+                                  alpha (#fff, 0.30)
+                                  ) 1 1 1 1;
+
+    box-shadow: inset 0 1px 0 0 alpha (#000, 0.02),
+                inset 0 -1px 0 0 alpha (#000, 0.10);
+}
+
+.sidebar .view:selected:backdrop,
+.sidebar .view:prelight:selected:backdrop,
+.source-list.view:selected:backdrop,
+.source-list.view:prelight:selected:backdrop {
+    background-color: shade(@background, 0.95);
+    border-color: @border;
 
     color: @text;
-    border: none;
-    background: transparent;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+
     box-shadow: none;
-    text-shadow: none;
-    icon-shadow: none;
 }
 
-/* Selected Backdrop */
-.sidebar.view:selected:backdrop,
-.sidebar.view:hover:selected:backdrop,
-.sidebar .view:selected:backdrop,
-.sidebar .view:hover:selected:backdrop,
-.source-list.view:selected:backdrop,
-.source-list.view:hover:selected:backdrop {
-    color: @backdrop_foreground;
-    background: shade(@backdrop_background,0.8);
-    border: none;
+GtkDialog .sidebar .view:selected:backdrop,
+GtkDialog .sidebar .view:prelight:selected:backdrop {
+    background-color: shade(@background, 0.95);
+    border-color: @border;
+    border-image:none;
     box-shadow: none;
-    text-shadow: none;
-    icon-shadow: none;
 }
 
+.sidebar-pane-separator,
+.sidebar-pane-separator:prelight,
+.sidebar-pane-separator:selected {
+
+    border-width: 0;
+    -GtkPaned-handle-size: 1;
+    background-image: none;
+    background-color: shade (@background, 0.75);
+}
+
+.sidebar .scrollbar.trough,
+.sidebar .scrollbars-junction,
+.source-list .scrollbar.trough,
+.source-list .scrollbars-junction {
+    background-color: @background;
+}
 
 .source-list.badge,
 .source-list.badge:prelight,
