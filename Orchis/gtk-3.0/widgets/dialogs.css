@@ -27,7 +27,7 @@ GtkMessageDialog {
 }
 
 GtkMessageDialog .button {
-    padding: 6px;
+    padding: 1px;
 }
 
 GtkDialog .titlebar,
@@ -58,9 +58,10 @@ GtkMessageDialog .titlebar:backdrop {
 
 GtkDialog,
 GtkMessageDialog {
-    box-shadow: inset 1px 0 0 0 alpha (#fff, 0.20),
+    box-shadow: none;
+    /*box-shadow: inset 1px 0 0 0 alpha (#fff, 0.20),
                 inset -1px 0 0 0 alpha (#fff, 0.20),
-                inset 0 -1px 0 0 alpha (#fff, 0.30);
+                inset 0 -1px 0 0 alpha (#fff, 0.30);*/
 
 }
 

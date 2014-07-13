@@ -77,7 +77,7 @@ UnityDecoration.right {
                                      color-stop (0, @panel),
                                      color-stop (0.5, @border),
                                      color-stop (1, @border));
-    /*background-image: none;*/
+    background-image: none;
 }
 
 UnityDecoration.bottom {

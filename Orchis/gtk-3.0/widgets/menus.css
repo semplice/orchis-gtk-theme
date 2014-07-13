@@ -35,8 +35,7 @@ GtkComboBox .menu {
 .header-bar .primary-toolbar .menu,
 .menu {
     padding: 0;
-    border-radius: 0;
-    border-style: none;
+    border: none;
     background-color: @base;
     color: @text;
 }
@@ -122,7 +121,7 @@ GtkTreeMenu .menuitem *,
 .menubar {
     -GtkWidget-window-dragging: true;
 
-    border-style: none;
+    border: none;
     background-color: @background;
     background-image: none;
     color: @foreground;
@@ -131,7 +130,7 @@ GtkTreeMenu .menuitem *,
 .menubar.menuitem,
 .menubar .menuitem {
     padding: 2px 6px;
-    border: 1px solid transparent;
+    border: none;
     background-color: transparent;
     /*background-image: none;*/
     color: @foreground;

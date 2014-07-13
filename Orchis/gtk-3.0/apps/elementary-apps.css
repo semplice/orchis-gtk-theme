@@ -256,8 +256,8 @@ ConversationListView.view.cell:selected {
     background-color: transparent;
     color: #fff;
     font-weight: bold;
-    text-shadow: 0 1px 2px alpha (#000, 0.6);
-    icon-shadow: 0 1px 2px alpha (#000, 0.6);
+    text-shadow: 0px 1px @text_shadow;
+    icon-shadow: none;
 }
 
 .panel .menu .menuitem {

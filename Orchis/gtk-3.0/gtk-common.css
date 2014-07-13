@@ -192,7 +192,7 @@
 @define-color destructive_action_button_b shade(@error, 0.9);
 @define-color destructive_action_button_border shade(@error, 0.8);
 @define-color destructive_action_button_foreground @base;
-@define-color destructive_action_button_shadow alpha(@base, 0.5);
+@define-color destructive_action_button_shadow alpha(@text, 0.5);
 
 /******************************
  * Suggested action buttons *

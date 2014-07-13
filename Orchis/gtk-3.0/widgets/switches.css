@@ -24,6 +24,7 @@
 GtkSwitch {
     border-radius: 1em;
     font: condensed;
+    box-shadow: 0 0 0 1px alpha (#fff, 0.03),
 }
 
 /* Normal */
@@ -33,7 +34,7 @@ GtkSwitch.trough {
     padding: 0.25em;
 
     border: 1px solid @border;
-
+    background-color: @background;
     background-image: linear-gradient(to bottom,
                                   alpha (#000, 0.10),
                                   alpha (#000, 0.05)
@@ -45,13 +46,16 @@ GtkSwitch.trough {
 
 GtkSwitch.slider {
     border: 1px solid alpha (#000, 0.3);
-    background-color: @switch_background;
+    background-image: linear-gradient(to bottom,
+                                      @button_gradient_a,
+                                      @button_gradient_a
+                                      );
 }
 
 
 /* Active */
 GtkSwitch.slider:active {
-    border: 1px solid shade(@selection, 0.8);
+    border: 1px solid alpha (#000, 0.3);
     background-image: linear-gradient(to bottom,
                                       @button_gradient_a,
                                       @button_gradient_a
