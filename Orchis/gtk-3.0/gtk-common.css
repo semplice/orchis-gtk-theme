@@ -297,7 +297,7 @@
 @define-color wm_highlight white;
 @define-color wm_title_highlight_dark alpha(white, 0.2);
 @define-color wm_title_highlight white;
-@define-color wm_title_shadow alpha(black, 0.2);
+@define-color wm_title_shadow alpha(@base, 0.2);
 
 @define-color wm_gradient_a @gradient_a;
 @define-color wm_gradient_b @gradient_b;
