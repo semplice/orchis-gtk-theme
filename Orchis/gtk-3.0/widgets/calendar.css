@@ -22,6 +22,7 @@
 
 GtkCalendar {
     padding: 2px;
+    border-radius: 2px;
 }
 
 GtkCalendar.view {
@@ -39,15 +40,15 @@ GtkCalendar.header {
 }
 
 GtkCalendar.button {
-    background-color: @selection;
-    color: @selected_foreground;
+    border: none;
+    background-color: transparent;
+    color: text;
 }
 
 GtkCalendar.button:insensitive,
 GtkCalendar.button:backdrop,
 GtkCalendar.button:insensitive:backdrop {
     background: none;
-    background-color: transparent;
 }
 
 .highlight,
@@ -57,4 +58,12 @@ GtkCalendar.highlight {
     border-radius: 0;
     padding: 0;
     border-width: 0;
+}
+
+GtkCalendar.button,
+GtkCalendar.button:insensitive,
+GtkCalendar.header,
+GtkCalendar.view {
+    background-color: transparent;
+    background-image: none;
 }

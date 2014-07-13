@@ -37,11 +37,7 @@
 
 .dynamic-notebook .notebook.header:backdrop {
     background-color: @backdrop_background;
-    background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.08),
-                                  alpha (#000, 0.00) 10%
-                                  );
-
+    background-image: none;
     border-color: @backdrop_border;
 }
 
@@ -63,17 +59,12 @@
 .dynamic-notebook:backdrop {
     background-color: transparent;
     border:none;
-    background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.08),
-                                  alpha (#000, 0.00) 10%
-                                  );
-
+    background-image: none;
     background-clip: border-box;
 
     text-shadow: 0 1px @text_shadow;
     icon-shadow: 0 1px @text_shadow;
 }
-
 
 
 .dynamic-notebook .notebook {
@@ -181,10 +172,7 @@
 .dynamic-notebook .notebook tab:active:backdrop,
 .dynamic-notebook .notebook tab:backdrop {
     background-color: @backdrop_background;
-    background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.08),
-                                  alpha (#000, 0.00) 10%
-                                  );
+    background-image: none;
     border: 0 solid transparent;
     text-shadow: none;
     icon-shadow: none;
