@@ -37,12 +37,22 @@
  */
 
 .titlebar.default-decoration {
-    border: none;
+    background-image: linear-gradient(to bottom,
+                                  shade (@background, 1.04),
+                                  @background
+                                  );
+    border-width: 0;
+
     box-shadow: none;
 }
 
-.titlebar .title {
+
+.titlebar .title,
+.titlebar .button.image-button GtkImage {
+    color: @wm_title;
     font: Bold 11;
+    text-shadow: 0 1px @wm_title_shadow;
+    icon-shadow: 0 1px @wm_title_shadow;
 }
 
 .titlebar:backdrop {

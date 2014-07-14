@@ -209,7 +209,7 @@ ConversationListView.view.cell:selected {
     color: @base;
     font-weight: bold;
     text-shadow: 0px 1px @alpha(black, 0.2);
-    icon-shadow: none;
+    icon-shadow: 0px 1px @alpha(black, 0.2);
 }
 
 .panel .menu  {
