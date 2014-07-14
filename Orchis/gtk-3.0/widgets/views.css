@@ -71,6 +71,9 @@
 /************
  * Viewport *
  ************/
+GtkViewport {
+    color: @text;
+}
 GtkViewport.frame {
     background-color: @base;
 }
