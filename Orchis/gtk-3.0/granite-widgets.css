@@ -26,10 +26,10 @@ GraniteWidgetsPopOver {
     -GraniteWidgetsPopOver-arrow-width: 21;
     -GraniteWidgetsPopOver-arrow-height: 10;
     -GraniteWidgetsPopOver-border-radius: 16px;
-    -GraniteWidgetsPopOver-border-width: 0;
+    -GraniteWidgetsPopOver-border-width: 1;
     -GraniteWidgetsPopOver-shadow-size: 12;
     
-    border: 1px solid alpha (#000, 0.3);
+    border: 1px solid @border;
     margin: 0;
 }
 
@@ -39,15 +39,11 @@ GraniteWidgetsStaticNotebook .frame {
 }
 
 .popover_bg {
-    /*background-color: transparent;*/
+    background-color: @background;
 
-    background-image: linear-gradient(to bottom,
-                                  alpha (@base, 0.97),
-                                  alpha (shade(@base, 1.1), 0.97) 80%,
-                                  alpha (shade(@base, 1.2), 0.97)
-                                  );
+    background-image: none;
 
-    border: 1px solid alpha (#000, 0.3);
+    border: 1px solid @border;
 }
 
 GraniteWidgetsPopOver .sidebar.view,
@@ -64,7 +60,7 @@ GraniteWidgetsPopOver .button:active,
 GraniteWidgetsPopOver .button:hover:active {
     background-image: none;
     background-color: alpha (#000, 0.05);
-    border-color: shade (@base, 0.74);
+    border-color: @border;
 }
 
 

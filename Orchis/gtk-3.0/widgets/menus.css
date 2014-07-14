@@ -60,7 +60,7 @@ GtkTreeMenu .menuitem *,
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
     border: none;
-    background-color: @selection;
+    background-color: alpha(@selection, 0.8);
     color: white;
 }
 
@@ -140,7 +140,9 @@ GtkTreeMenu .menuitem *,
 .menubar .menuitem:hover,
 .menubar .menuitem *:hover {
     border: none;
-    background-color: @selection;
+    background-color: alpha(@selection, 0.8);
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
     /*background-image: none;*/
     color: @selected_foreground;
 }

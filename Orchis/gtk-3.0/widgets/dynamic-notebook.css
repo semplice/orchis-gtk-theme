@@ -22,16 +22,14 @@
 
 .dynamic-notebook .notebook.header {
     background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.10),
-                                  alpha (#000, 0.00) 10%
+                                  alpha (#000, 0.20),
+                                  alpha (#000, 0.00) 5%
                                   ),
                         linear-gradient(to bottom,
                                   shade (@background, 0.8),
                                   shade (@background, 0.9)
                                   );
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    border-color: @border;
+    border-style: 0 solid @border;
     border-radius: 0;
 }
 
@@ -140,8 +138,8 @@
 
 .dynamic-notebook .notebook tab:active {
     background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.10),
-                                  alpha (#000, 0.00) 10%
+                                  alpha (#000, 0.20),
+                                  alpha (#000, 0.00) 5%
                                   ),
                         linear-gradient(to bottom,
                                   shade (@background, 0.8),
@@ -167,7 +165,7 @@
     background-color: @insensitive_background;
     background-image: linear-gradient(to bottom,
                                   alpha (#000, 0.08),
-                                  alpha (#000, 0.00) 10%
+                                  alpha (#000, 0.00) 5%
                                   );
     border: 0 solid transparent;
     text-shadow: none;
