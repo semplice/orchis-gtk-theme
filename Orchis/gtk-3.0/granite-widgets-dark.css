@@ -24,24 +24,25 @@ GraniteWidgetsPopOver {
 
     -GraniteWidgetsPopOver-arrow-width: 21;
     -GraniteWidgetsPopOver-arrow-height: 10;
-    -GraniteWidgetsPopOver-border-radius: 5px;
+    -GraniteWidgetsPopOver-border-radius: 16px;
     -GraniteWidgetsPopOver-border-width: 1;
     -GraniteWidgetsPopOver-shadow-size: 12;
     
-    border: 1px solid alpha (#000, 0.3);
+    border: 1px solid @border;
     margin: 0;
 }
 
+GraniteWidgetsPopOver .frame,
+GraniteWidgetsStaticNotebook .frame {
+    border: none;
+}
+
 .popover_bg {
-    background-color: transparent;
+    background-color: @background;
 
-    background-image: linear-gradient(to bottom,
-                                  alpha (@background, 0.97),
-                                  alpha (@background, 0.97) 80%,
-                                  alpha (@background, 0.97)
-                                  );
+    background-image: none;
 
-    border: 1px solid alpha (#000, 0.3);
+    border: 1px solid @border;
 }
 
 GraniteWidgetsPopOver .sidebar.view,
@@ -58,5 +59,24 @@ GraniteWidgetsPopOver .button:active,
 GraniteWidgetsPopOver .button:hover:active {
     background-image: none;
     background-color: alpha (#000, 0.05);
-    border-color: shade (@base, 0.74);
+    border-color: @border;
+}
+
+
+/***********
+ * Welcome *
+ **********/
+
+GraniteWidgetsWelcome {
+    background-color: @base;
+}
+
+GraniteWidgetsWelcome GtkLabel {
+    color: @text;
+    text-shadow: none;
+}
+
+GraniteWidgetsWelcome .h1,
+GraniteWidgetsWelcome .h3 {
+    color: alpha(@text, 0.8);
 }

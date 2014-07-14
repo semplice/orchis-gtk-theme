@@ -35,14 +35,14 @@ GtkCalendar.view {
 
 GtkCalendar.header {
     border-radius: 0;
-    background: @background;
+    background-color: @background;
     border-width: 0;
 }
 
 GtkCalendar.button {
     border: none;
     background-color: transparent;
-    color: text;
+    color: @text;
 }
 
 GtkCalendar.button:insensitive,

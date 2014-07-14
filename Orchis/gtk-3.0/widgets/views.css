@@ -135,6 +135,7 @@ GtkIconView.view {
     background-color: @base;
     border: solid @selection;
     border-top-width: 1px;
+    color: @text;
 }
  
 GtkIconView.view.cell:selected,
@@ -210,7 +211,7 @@ GtkIconView.content-view.check:selected {
 
 .content-view .subtitle,
 .content-view .option-description {
-    color: alpha (@text, 0.5);
+    color: alpha(@text, 0.7);
     text-shadow: 0 1px alpha (#fff, 0.4);
 } 
 
