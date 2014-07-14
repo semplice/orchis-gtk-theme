@@ -35,6 +35,17 @@
     background-color: @backdrop_background;
 }
 
+GtkDialog .search-bar {
+    background-image: none;
+    background-color: @background;
+    border-color: @border
+    box-shadow: none;
+}
+
+.search-bar .button.close-button {
+    padding: 5px 4px 5px 5px;
+}
+
 .search-bar .button.close-button {
     padding: 5px 4px 5px 5px;
 }

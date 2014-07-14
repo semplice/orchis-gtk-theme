@@ -101,8 +101,6 @@
 .window-frame {
     border: 1px solid @border;
     border-radius: 6px 6px 0 0;
-    border-width: 1px;
-    border-style: solid;
 
     box-shadow: 0 2px 8px 3px @wm_shadow;
 

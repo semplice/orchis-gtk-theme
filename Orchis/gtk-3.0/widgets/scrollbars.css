@@ -24,10 +24,11 @@
     background-image: none;
     border-style: solid;
     border: 1px solid transparent;
+    -GtkRange-trough-border: 2;
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false;
-    -GtkRange-slider-width: 8;
-    -GtkScrollbar-min-slider-length: 60;/* minimum size for the slider. sadly can't be in '.slider' where it belongs */
+    -GtkRange-slider-width: 6;
+    -GtkScrollbar-min-slider-length: 30;
 
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-under-steppers: 1;
@@ -104,35 +105,29 @@
     background-color: alpha(@foreground, 0.2);
     /* Borders are opposite what you'd expect */
     border-radius: 10px;
-    border: 1px solid alpha(@foreground, 0.2);
 }
 
 .scrollbar.slider:hover {
-    background-color: alpha(@selection, 0.8);
+    background-color: alpha(white, 0.4);
     background-image: none;
-    border: 1px solid @selection;
 }
 
 .scrollbar.slider:active {
     background-color: alpha(@selection, 0.7);
     background-image: none;
-    border: 1px solid @selection;
 }
 
 .scrollbar.slider:prelight:active {
     background-image: none;
     background-color: alpha(@foreground, 0.3);
-    border: 1px solid alpha(@foreground, 0.5);
 }
 
 .scrollbar.slider:insensitive {
     background-color: alpha(@insensitive_foreground, 0.2);
-    border: 1px solid  alpha(@insensitive_foreground, 0.4);
 }
 
 .scrollbar.slider:backdrop {
     background-color: alpha(@backdrop_foreground, 0.2);
-    border: 1px solid alpha(@backdrop_foreground, 0.4);
 }
 
 .scrollbar.slider.fine-tune:prelight:active {
