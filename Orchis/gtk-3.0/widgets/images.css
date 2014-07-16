@@ -44,6 +44,15 @@ GtkImage:insensitive {
     color: @selected_foreground;
 }
 
+.view.image:backdrop,
+.image:backdrop {
+    color: @backdrop_text;
+}
+.view.image:insensitive,
+.image:insensitive {
+    color: @insenstive_text;
+}
+
 .view.image,
 .view.image:hover {
     color: @view_symbolic;

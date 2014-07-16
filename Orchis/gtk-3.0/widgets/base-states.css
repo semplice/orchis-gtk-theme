@@ -28,6 +28,7 @@
 .background:backdrop {
     /* I want everything nice and flat in the backdrop window */
     background-color: @backdrop_background;
+    color: @backdrop_text;
     text-shadow: none;
     icon-shadow: none;
 
@@ -71,7 +72,7 @@ GtkClutterOffscreen {
 }
 
 *:hover {
-    -gtk-image-effect: highlight;
+    -gtk-image-effect: none;
 }
 
 .gtkstyle-fallback {
