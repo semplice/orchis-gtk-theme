@@ -32,9 +32,9 @@
                                   @button_gradient_b
                                   );
 
-    box-shadow: inset 0 0 0 1px alpha (@base, 0.05),
-                inset 0 1px 0 0 alpha (@base, 0.45),
-                inset 0 -1px 0 0 alpha (@base, 0.15);
+    box-shadow: inset 0 0 0 1px alpha(@base, 0.05),
+                inset 0 1px 0 0 alpha(@base, 0.45),
+                inset 0 -1px 0 0 alpha(@base, 0.15);
     color: @text;
     text-shadow: 0 1px @text_shadow;
     icon-shadow: 0 1px @icon_shadow;
@@ -52,9 +52,9 @@
                                   @button_gradient_b
                                   );
     
-    box-shadow: inset 0 0 0 1px alpha (@base, 0.05),
-                inset 0 1px 0 0 alpha (@base, 0.45),
-                inset 0 -1px 0 0 alpha (@base, 0.15);
+    box-shadow: inset 0 0 0 1px alpha(@base, 0.05),
+                inset 0 1px 0 0 alpha(@base, 0.45),
+                inset 0 -1px 0 0 alpha(@base, 0.15);
 }
 
 
@@ -68,9 +68,9 @@
                                   @button_active_gradient_a,
                                   @button_active_gradient_b
                                   );
-    box-shadow: inset 0 0 0 1px alpha (@base, 0.05),
-                inset 0 1px 0 0 alpha (@base, 0.45),
-                inset 0 -1px 0 0 alpha (@base, 0.15);
+    box-shadow: inset 0 0 0 1px alpha(@base, 0.05),
+                inset 0 1px 0 0 alpha(@base, 0.45),
+                inset 0 -1px 0 0 alpha(@base, 0.15);
 }
 
 
@@ -220,8 +220,6 @@
     border-radius: 16px;
 }
 
-
-
 /*************************** 
 * Overlay Button *
 ***************************/
@@ -235,8 +233,8 @@ GtkOverlay > .button:focus {
     border: 2px solid #fff;
     color: #fff;
 
-    box-shadow: 0 1px 0 1px alpha (#000, 0.30);
-    text-shadow: 0 1px 0 1px alpha (#000, 0.30);
+    box-shadow: 0 1px 0 1px alpha(#000, 0.30);
+    text-shadow: 0 1px 0 1px alpha(#000, 0.30);
 
     background-clip: border-box;
 }

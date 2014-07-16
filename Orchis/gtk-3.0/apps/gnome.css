@@ -232,7 +232,7 @@ CheeseThumbView /* Cheese */
 
 .nautilus-desktop.nautilus-canvas-item {
     color: @selected_foreground;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px #000;
 }
 
 .nautilus-desktop.nautilus-canvas-item:active {
@@ -453,7 +453,7 @@ GeditFileBrowserWidget .primary-toolbar.toolbar  {
 .cell.baobab-level-cell:hover,
 .cell.baobab-level-cell:selected,
 .cell.baobab-level-cell:selected:hover {
-    border-color: alpha (black, 0.06);
+    border-color: alpha(#000, 0.06);
     border-width: 1px;
     border-style: solid;
     background-color: @base;

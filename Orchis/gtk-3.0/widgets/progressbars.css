@@ -28,8 +28,8 @@ GtkProgressBar {
 GtkProgressBar.progressbar {
     border-radius: none;
     color: @selected_foreground;
-    text-shadow: 0 1px alpha (#000, 0.3);
-    icon-shadow: 0 1px alpha (#000, 0.3);
+    text-shadow: 0 1px alpha(#000, 0.3);
+    icon-shadow: 0 1px alpha(#000, 0.3);
 
     background-image: linear-gradient(to bottom,
                                   shade (@selection, 1.2),
@@ -75,8 +75,8 @@ GtkProgressBar.trough {
 .progressbar.vertical row:selected:focus {
     border-radius: none;
     color: @selected_foreground;
-    text-shadow: 0 1px alpha (#000, 0.3);
-    icon-shadow: 0 1px alpha (#000, 0.3);
+    text-shadow: 0 1px alpha(#000, 0.3);
+    icon-shadow: 0 1px alpha(#000, 0.3);
 
     background-image: linear-gradient(to bottom,
                                   shade (@selection, 1.2),
@@ -102,8 +102,8 @@ GtkProgressBar.trough {
 .progressbar.vertical row:selected:focus:insensitive {
     border-radius: none;
     color: @selected_foreground;
-    text-shadow: 0 1px alpha (#000, 0.3);
-    icon-shadow: 0 1px alpha (#000, 0.3);
+    text-shadow: 0 1px alpha(#000, 0.3);
+    icon-shadow: 0 1px alpha(#000, 0.3);
     background-image: linear-gradient(to bottom,
                                       @insensitive_progressbar_background_a,
                                       @insensitive_progressbar_background_b
@@ -128,8 +128,8 @@ GtkProgressBar.trough {
 .progressbar.vertical row:selected:focus:backdrop {
     border-radius: none;
     color: @selected_foreground;
-    text-shadow: 0 1px alpha (#000, 0.3);
-    icon-shadow: 0 1px alpha (#000, 0.3);
+    text-shadow: 0 1px alpha(#000, 0.3);
+    icon-shadow: 0 1px alpha(#000, 0.3);
     background-image: linear-gradient(to bottom,
                                       @backdrop_progressbar_background_a,
                                       @backdrop_progressbar_background_b

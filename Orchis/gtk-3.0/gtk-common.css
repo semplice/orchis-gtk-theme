@@ -113,9 +113,9 @@
 @define-color button_backdrop_gradient_b @backdrop_background;
 
 @define-color button_active_text @active_text;
-@define-color button_active_text_shadow alpha(black, 0.2);
+@define-color button_active_text_shadow alpha(#000, 0.2);
 
-@define-color button_text_shadow alpha(black, 0.2);
+@define-color button_text_shadow alpha(#000, 0.2);
 
 
 /**************
@@ -159,7 +159,7 @@
 @define-color internal_element_insensitive mix(@internal_element, @base, 0.7);
 
 @define-color inset_light alpha(white, 0.45);
-@define-color inset_dark alpha(black, 0.07);
+@define-color inset_dark alpha(#000, 0.07);
 
 /*****************
  * Miscellaneous *
@@ -210,7 +210,7 @@
 @define-color selection_toolbar_background_b @selection;
 @define-color selection_toolbar_background_backdrop @selection_toolbar_background_a;
 @define-color selection_toolbar_foreground @base;
-@define-color selection_toolbar_shadow alpha(black, 0.2);
+@define-color selection_toolbar_shadow alpha(#000, 0.2);
 @define-color selection_toolbar_border shade(@selection_toolbar_background_b, 0.75);
 
 @define-color selection_toolbar_button_a @suggested_action_button_a;
@@ -262,7 +262,7 @@
 @define-color question #60ade8;
 @define-color warning #f49f25;
 @define-color error #e50e0e;
-@define-color success #6bc810;
+@define-color success #36c1d4;
 @define-color info #f5f697;
 
 /* Info colors */
@@ -279,13 +279,13 @@
 
 /* Question colors */
 @define-color question_foreground white;
-@define-color question_text_shadow alpha(black, 0.2);
+@define-color question_text_shadow alpha(#000, 0.2);
 @define-color question_background @question;
 @define-color question_border shade(@question_background, 0.9);
 
 /* Error colors */
 @define-color error_foreground white;
-@define-color error_text_shadow alpha(black, 0.5);
+@define-color error_text_shadow alpha(#000, 0.5);
 @define-color error_background @error;
 @define-color error_border shade(@error_background, 0.9);
 
@@ -302,7 +302,7 @@
 @define-color wm_gradient_a @gradient_a;
 @define-color wm_gradient_b @gradient_b;
 
-@define-color wm_shadow alpha(black, 0.4);
+@define-color wm_shadow alpha(#000, 0.4);
 
 @define-color wm_button_gradient_a @button_gradient_a;
 @define-color wm_button_gradient_b @button_gradient_b;

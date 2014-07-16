@@ -11,7 +11,7 @@
     background-color: alpha(@panel, 0.9);
     color: white;
 
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px #000;
 }
 
 .tooltip * {
@@ -21,5 +21,5 @@
 .tooltip GtkLabel,
 .overlay-bar GtkLabel {
     color: white;
-    text-shadow: 0 1px alpha (#000, 0.6);
+    text-shadow: 0 1px alpha(#000, 0.6);
 }

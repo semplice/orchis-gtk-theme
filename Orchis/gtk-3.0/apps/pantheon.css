@@ -31,24 +31,24 @@ BirdieWidgetsTweetList * {
  *******/
 
 .gala-workspaces-background {
-    border-top: 1px solid alpha (#fff, 0.15);
+    border-top: 1px solid alpha(#fff, 0.15);
     background-color: #2d2d2d;
     
     background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.30),
+                                  alpha(#000, 0.30),
                                   transparent 6px
                                   );
 }
 
 .gala-workspace-selected {
 
-    border: 1px solid alpha (#000, 0.15);
+    border: 1px solid alpha(#000, 0.15);
     border-radius: 4px;
     
-    box-shadow: inset 0 0 0 1px alpha (#fff, 0.05),
-            inset 0 1px 0 0 alpha (#fff, 0.45),
-            inset 0 -1px 0 0 alpha (#fff, 0.15),
-            0 1px 0 1px alpha (#000, 0.15);
+    box-shadow: inset 0 0 0 1px alpha(#fff, 0.05),
+            inset 0 1px 0 0 alpha(#fff, 0.45),
+            inset 0 -1px 0 0 alpha(#fff, 0.15),
+            0 1px 0 1px alpha(#000, 0.15);
             
     background-image: linear-gradient(to bottom,
                                   shade (@selected_background, 1.25),
@@ -61,12 +61,12 @@ BirdieWidgetsTweetList * {
  *********/
 
 .notify {
-    /*-notify-shadow: 0px 2px 18px alpha (#000, 0.60);*/
+    /*-notify-shadow: 0px 2px 18px alpha(#000, 0.60);*/
 
     border-radius: 5px;
-    border: 1px solid alpha (#000, 0.30);
+    border: 1px solid alpha(#000, 0.30);
 
-    background-color: alpha (#f8f8f8, 0.95);
+    background-color: alpha(#f8f8f8, 0.95);
 }
 
 .notify .low {
@@ -86,13 +86,13 @@ MarlinViewChromeLocationBar .button {
 }
 
 MarlinViewChromeLocationBar .button:active {
-    box-shadow: inset 0 1px 1px alpha(black, 0.1),
+    box-shadow: inset 0 1px 1px alpha(#000, 0.1),
                 inset 1px 0 @inset_dark;
 }
 
 MarlinViewChromeLocationBar .button:focus {
-    box-shadow: inset 0 0 0 1px alpha (@selection, 0.23),
-                0 1px 0 alpha (#fff, 0.30);
+    box-shadow: inset 0 0 0 1px alpha(@selection, 0.23),
+                0 1px 0 alpha(#fff, 0.30);
     border-color: @border;
     icon-shadow:none;
 }
@@ -100,8 +100,8 @@ MarlinViewChromeLocationBar .button:focus {
 MarlinViewChromeLocationBar .button:active {
     background-image: none;
     background-color: transparent;
-    border-color: alpha (@selection, 0.80);
-    box-shadow: inset 0 0 0 1px alpha (@border, 0.4);
+    border-color: alpha(@selection, 0.80);
+    box-shadow: inset 0 0 0 1px alpha(@border, 0.4);
     icon-shadow:none;
 }
 
@@ -117,7 +117,7 @@ ConversationListView {
 ConversationListView.view.cell {
     border-style: solid;
     border-width: 0 0 1px 0;
-    border-color: alpha (#000, 0.2);
+    border-color: alpha(#000, 0.2);
 }
  
 ConversationListView.view.cell:selected {
@@ -131,12 +131,12 @@ ConversationListView.view.cell:selected {
  *********/
 
 .notify {
-    /*-notify-shadow: 0px 2px 18px alpha (#000, 0.60);*/
+    /*-notify-shadow: 0px 2px 18px alpha(#000, 0.60);*/
 
     border-radius: 5px;
-    border: 1px solid alpha (#000, 0.30);
+    border: 1px solid alpha(#000, 0.30);
 
-    background-color: alpha (#f7f7f7, 0.95);
+    background-color: alpha(#f7f7f7, 0.95);
 }
 
 .notify .low {
@@ -166,7 +166,7 @@ ConversationListView.view.cell:selected {
 }
 
 .app:focus {
-    background-color: alpha (#000, 0.20);
+    background-color: alpha(#000, 0.20);
 }
  
 .search-item {
@@ -181,8 +181,8 @@ ConversationListView.view.cell:selected {
     border-radius: 0;
     background-color: @selection;
     color: @selected_foreground;
-    icon-shadow: 0 1px alpha(black, 0.2);
-    icon-shadow: 0 1px alpha(black, 0.2);
+    icon-shadow: 0 1px alpha(#000, 0.2);
+    icon-shadow: 0 1px alpha(#000, 0.2);
 }
  
 .search-entry-large,
@@ -206,10 +206,10 @@ ConversationListView.view.cell:selected {
 
 .panel {
     background-color: transparent;
-    color: @base;
+    color: white;
     font-weight: bold;
-    text-shadow: 0px 1px @alpha(black, 0.2);
-    icon-shadow: 0px 1px @alpha(black, 0.2);
+    text-shadow: 0px 1px alpha(#000, 0.2);
+    icon-shadow: 0px 1px alpha(#000, 0.2);
 }
 
 .panel .menu  {

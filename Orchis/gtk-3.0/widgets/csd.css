@@ -109,15 +109,15 @@
 
 /* Window Frame */
 .window-frame {
-    border: 1px solid @border;
     border-radius: 6px 6px 0 0;
-
-    box-shadow: 0 2px 8px 3px @wm_shadow;
+    box-shadow: 0 0 0 1px alpha(#000, 0.2),
+                0 2px 8px 3px @wm_shadow;
 
     /* this is used for the resize cursor area */
     margin: 10px;
 }
 
 .window-frame:backdrop {
-    box-shadow: 0 2px 5px 1px @wm_shadow;
+    box-shadow: 0 0 0 1px alpha(#000, 0.2),
+                0 2px 5px 1px @wm_shadow;
 }

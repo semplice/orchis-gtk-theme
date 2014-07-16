@@ -216,7 +216,7 @@
 .notebook.header,
 .notebook.header:backdrop {
     background-color: shade(@background, 0.95);
-    box-shadow: inset 0 1px alpha(black, 0.03);
+    box-shadow: inset 0 1px alpha(#000, 0.03);
     border-width: 0px;
 }
 
@@ -294,13 +294,13 @@
 
 .notebook tab .button:hover {
     color: @foreground;
-    border-color: alpha(black, 0.1);
+    border-color: alpha(#000, 0.1);
 }
 
 .notebook tab .button:active,
 .notebook tab .button:active:hover {
-    background-color: alpha(black, 0.08);
-    box-shadow: inset 0 1px alpha(black, 0.05);
+    background-color: alpha(#000, 0.08);
+    box-shadow: inset 0 1px alpha(#000, 0.05);
     color:  @button_active_text;
     icon-shadow: 0 1px @text_shadow;
 

@@ -58,7 +58,7 @@ GraniteWidgetsPopOver .button {
 GraniteWidgetsPopOver .button:active,
 GraniteWidgetsPopOver .button:hover:active {
     background-image: none;
-    background-color: alpha (#000, 0.05);
+    background-color: alpha(#000, 0.05);
     border-color: @border;
 }
 
