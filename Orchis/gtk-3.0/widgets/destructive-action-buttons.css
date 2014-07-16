@@ -8,6 +8,9 @@
                                       @destructive_action_button_b);
 
     color: @destructive_action_button_foreground;
+
+    border-radius: 3px;
+    border: 1px solid #e50e0e;
 }
 
 .destructive-action.button:hover {
@@ -22,6 +25,9 @@
 .destructive-action.button:hover:active {
     background-color: @destructive_action_button_b;
     color: @destructive_action_button_foreground;
+
+    border-radius: 3px;
+    border: 1px solid #e50e0e;
 }
 
 .destructive-action.button {

@@ -16,7 +16,6 @@
 * with the Orchis GTK theme. If not, see http://www.gnu.org/licenses/.
 */
 
-
 /**********************
  * Common Definitions *
  **********************/
@@ -61,12 +60,7 @@
 @define-color hover_selection shade(@selection, 1.3);
 
 /* Active colors */
-@define-color active_base shade(@base, 0.8);
-@define-color active_background shade(@background, 0.8);
-@define-color active_foreground shade(@foreground, 0.8);
-@define-color active_border shade(@border, 0.8);
 @define-color active_text shade(@text, 1.3);
-@define-color active_selection shade(@selection, 0.8);
 
 /* Selected color */
 @define-color selected_background @selection;
@@ -75,6 +69,7 @@
 /****************
  * Theme colors *
   ***************/
+
 @define-color theme_base @base;
 
 @define-color theme_background @background;
@@ -84,14 +79,6 @@
 @define-color theme_selected_foreground @selected_foreground;
 
 @define-color theme_text @text;
-
-
-/*****************
- * Switch colors *
- *****************/
-
-@define-color switch_background shade(@background, 1.02);
-
 
 /*****************
  * Button colors *
@@ -129,8 +116,6 @@
  * Progressbars *
  ****************/
 
-@define-color progressbar_border @border;
-
 @define-color progressbar_background_a shade(@selected_background, 1.1);
 @define-color progressbar_background_b @selected_background;
 
@@ -145,11 +130,9 @@
  * Troughs *
  ***********/
 @define-color trough_active @selected_background;
-
 @define-color trough_background shade(@base,0.95);
 @define-color insensitive_trough_background shade(@insensitive_background, 0.95);
 @define-color backdrop_trough_background shade(@backdrop_background, 0.98);
-
 
 /*********************
  * Internal elements *
@@ -164,26 +147,10 @@
 /*****************
  * Miscellaneous *
  *****************/
-@define-color content_view_background @background;
-@define-color list_box_background @background;
-
-@define-color view_separators shade(@border, 1.30);
 @define-color view_symbolic shade(@internal_element, 0.50);
-
-/* Scale colors */
-@define-color scale_progress_fill @selected_background;
-
-/* Insensitive scale border */
-@define-color insensitive_scale_border @insensitive_border;
 
 /* GNOME Apps */
 @define-color entry_tag_background #3465a4;
-@define-color entry_tag_foreground @base;
-
-/* Internal Elements */
-@define-color internal_element_color @border;
-@define-color internal_element_prelight @text;
-@define-color internal_element_insensitive mix(@internal_element_color, @base, 0.7);
 
 /******************************
  * Destructive action buttons *
@@ -199,9 +166,7 @@
  ******************************/
 @define-color suggested_action_button_a shade(@selection, 1.1);
 @define-color suggested_action_button_b shade(@suggested_action_button_a, 0.95);
-@define-color suggested_action_button_foreground white;
 @define-color suggested_action_button_shadow @panel_text_shadow;
-
 
 /**************************
  * Selection Mode classes *
@@ -231,17 +196,6 @@
 @define-color selection_menu_hover shade(@selection_menu_foreground, 1.2);
 @define-color selection_menu_active shade(@selection_menu_foreground, 1.1);
 
-/* OSD */
-@define-color osd_base @panel;
-@define-color osd_foreground @base;
-@define-color osd_background @panel;
-
-/* Tooltips */
-@define-color tooltip_background @text;
-@define-color tooltip_foreground @background;
-@define-color theme_tooltip_background @tooltip_background;
-@define-color theme_tooltip_foreground @tooltip_foreground;
-
 /* Hightlight & shadow colors */
 @define-color highlight #fff;
 @define-color shadow #000;
@@ -249,7 +203,7 @@
 /***********
  * Popover *
  ***********/
-@define-color osd_popover_background alpha(@osd_base, 0.90);
+@define-color osd_popover_background alpha(@panel, 0.90);
 
 /******************
  * Infobar colors *
@@ -289,36 +243,17 @@
 @define-color error_background @error;
 @define-color error_border shade(@error_background, 0.9);
 
-/******
- * WM *
- ******/
-@define-color wm_title @text;
-@define-color wm_backdrop_title @backdrop_foreground;
-@define-color wm_highlight white;
-@define-color wm_title_highlight_dark alpha(white, 0.2);
-@define-color wm_title_highlight white;
-@define-color wm_title_shadow alpha(@base, 0.2);
-
-@define-color wm_gradient_a @gradient_a;
-@define-color wm_gradient_b @gradient_b;
-
-@define-color wm_shadow alpha(#000, 0.4);
-
-@define-color wm_button_gradient_a @button_gradient_a;
-@define-color wm_button_gradient_b @button_gradient_b;
-
-@define-color wm_button_hover_gradient_a @button_hover_gradient_a;
-@define-color wm_button_hover_gradient_b @button_hover_gradient_b;
-
-@define-color wm_button_active_gradient_a @button_active_gradient_a;
-@define-color wm_button_active_gradient_b @button_active_gradient_b;
+/**********
+ * Window *
+ **********/
+@define-color window_shadow alpha(#000, 0.4);
 
 /***********
  * Imports *
  ***********/
 
 /* Import App-Specific CSS */
-@import url("apps/fallback-panel.css");
+@import url("apps/fallback.css");
 @import url("apps/gnome.css");
 @import url("apps/pantheon.css");
 @import url("apps/unity.css");

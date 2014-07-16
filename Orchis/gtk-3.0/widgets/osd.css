@@ -20,12 +20,12 @@
  * OSD *
  *******/
 .background.osd {
-    color: @osd_foreground;
-    background-color: @osd_background;
+    color: @base;
+    background-color: @panel;
 }
 
 .background.osd:backdrop {
-    background-color: @osd_background_backdrop;
+    background-color: @panel_backdrop;
 }
 
 GtkOverlay.osd {
@@ -83,7 +83,7 @@ GtkOverlay.osd {
 .osd.button,
 .osd.button:prelight,
 .osd.button:active {
-    background-color: shade(@osd_background, 1.10);
+    background-color: shade(@panel, 1.10);
 }
 
 .osd .button,
@@ -201,7 +201,7 @@ GtkOverlay.osd {
 }
 
 .osd.toolbar {
-    color: @osd_foreground;
+    color: @base;
     text-shadow: 0 1px @osd_text_shadow;
 
     padding: 10px;
@@ -219,7 +219,7 @@ GtkOverlay.osd {
 
 .osd.toolbar:backdrop {
     background-image: none;
-    background-color: @osd_background_backdrop;
+    background-color: @panel_backdrop;
 }
 
 .osd.toolbar .button {
@@ -263,7 +263,7 @@ GtkOverlay.osd {
 }
 
 .osd.progressbar {
-    background-color: @osd_foreground;
+    background-color: @base;
 }
 
 .osd .scale.trough {
@@ -366,5 +366,5 @@ GtkProgressBar.osd.progressbar {
     border-color: @osd_lowlight;
 
     /* when there's no pixbuf yet */
-    background-color: @osd_background;
+    background-color: @panel;
 }

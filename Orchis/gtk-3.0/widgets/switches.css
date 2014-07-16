@@ -48,7 +48,7 @@ GtkSwitch.slider {
     border: 1px solid alpha(#000, 0.3);
     background-image: linear-gradient(to bottom,
                                       @button_gradient_a,
-                                      @button_gradient_a
+                                      @button_gradient_b
                                       );
 }
 
@@ -58,14 +58,14 @@ GtkSwitch.slider:active {
     border: 1px solid alpha(#000, 0.3);
     background-image: linear-gradient(to bottom,
                                       @button_gradient_a,
-                                      @button_gradient_a
+                                      @button_gradient_b
                                       );
 }
 
 GtkSwitch.trough:active {
     color: @selected_foreground;
     background-image: linear-gradient(to bottom,
-                                  shade (@selection, 0.9),
+                                  shade(@selection, 0.9),
                                   @selection
                                   );
 

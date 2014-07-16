@@ -81,7 +81,7 @@
 }
 
 .scrollbar.button:hover {
-    color: @scrollbar_slider_prelight;
+    color: shade(@scrollbar_slider, 1.1);
 }
 
 .scrollbar.button:insensitive {

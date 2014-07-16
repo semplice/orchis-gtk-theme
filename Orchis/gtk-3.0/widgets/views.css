@@ -65,6 +65,7 @@
 .view:selected:focus {
     background-color: @selection;
     color: @selected_foreground;
+    text-shadow: 0 1px @text_shadow;
 }
 
 .view:selected:backdrop,

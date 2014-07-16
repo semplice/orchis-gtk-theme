@@ -35,7 +35,7 @@
 GtkDialog .sidebar,
 GtkDialog .sidebar .view,
 GtkDialog .sidebar GtkScrolledWindow {
-    background-color: shade (@background, 1.07);
+    background-color: shade(@background, 1.07);
 }
 
 .sidebar,
@@ -62,7 +62,7 @@ GtkDialog .sidebar GtkScrolledWindow {
 
 .sidebar .view:prelight,
 .source-list.view:prelight {
-    background-color: shade (@background, 1.05);
+    background-color: shade(@background, 1.05);
 }
 
 .sidebar .view:selected,
@@ -127,7 +127,7 @@ GtkDialog .sidebar .view:prelight:selected:backdrop {
     border-width: 0;
     -GtkPaned-handle-size: 1;
     background-image: none;
-    background-color: shade (@background, 0.75);
+    background-color: shade(@background, 0.75);
 }
 
 .sidebar .scrollbar.trough,
@@ -162,7 +162,7 @@ GtkDialog .sidebar .view:prelight:selected:backdrop {
 .source-list.badge:selected:prelight:backdrop {
     background-image: none;
     background-color: alpha(#000, 0.2);
-    color: shade (@background, 0.95);
+    color: shade(@background, 0.95);
     text-shadow: 0 1px alpha(#000, 0.1);
     icon-shadow: 0 1px alpha(#000, 0.1);
 }

@@ -49,7 +49,7 @@ EggListBox:selected {
  * Content view *
  ****************/
 .content-view.view {
-    background-color: @content_view_background;
+    background-color: @background;
 }
 
 .content-view.view:insensitive {
