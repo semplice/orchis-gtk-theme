@@ -30,7 +30,7 @@
 .scale.slider {
     border-radius: 50%;
     background-image: linear-gradient(to bottom,
-                                  shade(@background, 1.10),
+                                  shade (@background, 1.10),
                                   @background
                                   );
                                   
@@ -40,25 +40,24 @@
 .scale.slider:hover {
     border-radius: 50%;
     background-image: linear-gradient(to bottom,
-                                  shade(@background, 1.30),
-                                  shade(@background, 1.20)
+                                  shade (@background, 1.30),
+                                  shade (@background, 1.20)
                                   );
                                   
-    box-shadow: inset 0 0 0 1px shade(@border, 1.02);
+    box-shadow: inset 0 0 0 1px lighter(@border);
 }
 
 .scale.slider:active {
     border-radius: 50%;
     background-image: linear-gradient(to bottom,
-                                  shade(@background, 1.30),
-                                  shade(@background, 1.20)
+                                  shade (@background, 1.30),
+                                  shade (@background, 1.20)
                                   );
                                   
     box-shadow: inset 0 0 0 1px @selection;
 }
 
-.scale.slider:insensitive,
-.scale.slider:insensitive:backdrop {
+.scale.slider:insensitive {
     border-radius: 50%;
     background-image: none;
     background-color: @insensitive_background;
@@ -161,16 +160,16 @@
 .scale.progressbar
 .scale.progressbar.vertical {
     background-image: linear-gradient(to bottom,
-                                  shade(@selection, 1.2),
-                                  shade(@selection, 1.0)
+                                  shade (@selection, 1.2),
+                                  shade (@selection, 1.0)
                                   );
 
     border-style: solid;
     border-width: 1px;
 
     border-image: linear-gradient(to bottom,
-                                  shade(@selection, 0.9),
-                                  shade(@selection, 0.8)
+                                  shade (@selection, 0.9),
+                                  shade (@selection, 0.8)
                                   ) 1 1 1 1;
 }
 
@@ -185,8 +184,8 @@
     border-width: 1px;
 
     border-image: linear-gradient(to bottom,
-                                  shade(@insensitive_border, 0.9),
-                                  shade(@insensitive_border, 0.8)
+                                  shade (@insensitive_border, 0.9),
+                                  shade (@insensitive_border, 0.8)
                                   ) 1 1 1 1;
 }
 
@@ -202,7 +201,7 @@
     border-width: 1px;
 
     border-image: linear-gradient(to bottom,
-                                  shade(@backdrop_border, 0.9),
-                                  shade(@backdrop_border, 0.8)
+                                  shade (@backdrop_border, 0.9),
+                                  shade (@backdrop_border, 0.8)
                                   ) 1 1 1 1;
 }

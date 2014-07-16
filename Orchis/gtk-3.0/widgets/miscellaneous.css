@@ -84,7 +84,7 @@ GtkBubbleWindow {
 }
 
 GtkBubbleWindow.osd.background {
-    background-color: @panel;
+    background-color: @osd_background;
 }
 
 GtkBubbleWindow .toolbar {

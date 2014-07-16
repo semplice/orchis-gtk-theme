@@ -20,11 +20,11 @@
  * CSD *
  *******/
 .titlebar {
-    text-shadow: 0 1px @text_shadow;
+    text-shadow: 0 1px @wm_title_shadow;
 
     background-image: linear-gradient(to bottom,
-                                      @gradient_a,
-                                      @gradient_b);
+                                      @wm_gradient_a,
+                                      @wm_gradient_b);
     border-radius: 7px 7px 0px 0px;
     border-width: 0px;
     padding-left: 6px;
@@ -38,7 +38,7 @@
 
 .titlebar.default-decoration {
     background-image: linear-gradient(to bottom,
-                                  shade(@background, 1.04),
+                                  shade (@background, 1.04),
                                   @background
                                   );
     border-width: 0;
@@ -49,32 +49,24 @@
 
 .titlebar .title,
 .titlebar .button.image-button GtkImage {
-    color: @text;
+    color: @wm_title;
     font: Bold 11;
-    text-shadow: 0 1px @text_shadow;
-    icon-shadow: 0 1px @text_shadow;
+    text-shadow: 0 1px @wm_title_shadow;
+    icon-shadow: 0 1px @wm_title_shadow;
 }
 
 .titlebar:backdrop {
     text-shadow: none;
     background-image: none;
-    background-color: @backdrop_background;
+    background-color: @wm_gradient_b;
 }
 
 .titlebar .titlebutton {
-    icon-shadow: 0px 1px @text_shadow;
-    color: @text;
+    icon-shadow: 0px 1px @wm_title_shadow;
+    color: @wm_title;
     background: none;
     padding: 4px 8px 4px 8px;
     border-radius: 4px;
-
-    box-shadow: inset 0 0 0 1px alpha(@base, 0.1),
-                inset 0 1px 0 0 alpha(@base, 0.45),
-                inset 0 -1px 0 0 alpha(@base, 0.15);
-
-    color: @text;
-    text-shadow: 0 1px @text_shadow;
-    icon-shadow: 0 1px @icon_shadow;
 }
 
 .titlebar .titlebutton:hover {
@@ -110,7 +102,7 @@
 
 .titlebar .titlebutton:backdrop {
     background-image: none;
-    color: @backdrop_text;
+    color: @wm_backdrop_title;
     border-image: none;
     icon-shadow: none;
 }
@@ -119,7 +111,7 @@
 .window-frame {
     border-radius: 6px 6px 0 0;
     box-shadow: 0 0 0 1px alpha(#000, 0.2),
-                0 2px 8px 3px @window_shadow;
+                0 2px 8px 3px @wm_shadow;
 
     /* this is used for the resize cursor area */
     margin: 10px;
@@ -127,5 +119,5 @@
 
 .window-frame:backdrop {
     box-shadow: 0 0 0 1px alpha(#000, 0.2),
-                0 2px 5px 1px @window_shadow;
+                0 2px 5px 1px @wm_shadow;
 }

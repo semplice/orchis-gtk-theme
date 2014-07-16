@@ -39,7 +39,7 @@ GtkLevelBar.vertical {
     border-width: 1px;
     border-style: solid;
 
-    border-color: @border;
+    border-color: @progressbar_border;
     background-image: linear-gradient(to bottom,
                                       shade(@progressbar_background_a, 0.9),
                                       @progressbar_background_b 75%,

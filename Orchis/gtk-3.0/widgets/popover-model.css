@@ -27,14 +27,14 @@ GtkPopover {
 
     border: 1px solid @border;
 
-    box-shadow: 0 2px 3px @window_shadow;
+    box-shadow: 0 2px 3px @wm_shadow;
     margin: 10px;
 }
 
 GtkPopover.osd {
     background-color: @osd_popover_background;
     border-color: @border;
-    box-shadow: 0 2px 8px 3px alpha(@window_shadow, 0.4), inset 0 1px 0 0 @osd_popover_background;
+    box-shadow: 0 2px 8px 3px alpha(@wm_shadow, 0.4), inset 0 1px 0 0 @osd_popover_background;
     color: darker(white);
 }
 
