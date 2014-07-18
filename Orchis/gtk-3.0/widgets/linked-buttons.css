@@ -558,8 +558,9 @@ GtkLinkButton.button:active {
 }
 
 .button .separator { 
-    color: shade(@internal_element, 1.30);
+    color: @border;
 }
+
 /* Set up shadows and hilights for button visual separation */
 .linked .entry {
     box-shadow: inset -1px 0 @inset_dark;
@@ -1096,5 +1097,5 @@ GtkLinkButton.button:active {
 }
 
 .button .separator { 
-    color: shade(@internal_element, 1.30);
+    color: @border;
 }
