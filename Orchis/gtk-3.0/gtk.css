@@ -23,7 +23,7 @@
 
 /* Base colors */
 @define-color base #fff;/* Base color */
-@define-color background #eae7eb;/* Background color */
+@define-color background #efefef;/* Background color */
 @define-color foreground #555;/* Foreground color */
 @define-color border shade(@background, 0.8);/* Borders color */
 @define-color separator @border;/* Separator color */
@@ -36,7 +36,7 @@
 @define-color gradient_b shade(@gradient_a, 0.95);/* Gradient color B */
 @define-color view_background #fff;/* View background */
 @define-color inactive_frame @border;/* Inactive frame color */
-@define-color panel_text #eae7eb;/* Panel text color */
+@define-color panel_text #efefef;/* Panel text color */
 @define-color panel_text_shadow alpha(#000, 0.2);/* Panel text color */
 @define-color text_shadow alpha(white, 0.4);/* Text shadow */
 @define-color icon_shadow @text_shadow;/* Icon shadow */

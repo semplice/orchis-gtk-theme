@@ -28,7 +28,7 @@
      stroke="#ef2929"
      fill="#f57900"
      id="base"
-     pagecolor="#eae7eb"
+     pagecolor="#efefef"
      bordercolor="#666666"
      borderopacity="0.25490196"
      inkscape:pageopacity="0"
@@ -87,7 +87,7 @@
     <linearGradient
        id="linearGradient4785">
       <stop
-         style="stop-color:#eae7eb;stop-opacity:1;"
+         style="stop-color:#efefef;stop-opacity:1;"
          offset="0"
          id="stop4787" />
       <stop
