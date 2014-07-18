@@ -59,9 +59,10 @@ GtkTreeMenu .menuitem *,
 .menu .menuitem *:active,
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
-    border: 1px solid shade(@selection, 0.8);
+    /*border: 1px solid shade(@selection, 0.8);*/
     background-color: @selection;
     color: white;
+    text-shadow:none;
 }
 
 .menu .menuitem:insensitive,
@@ -139,10 +140,11 @@ GtkTreeMenu .menuitem *,
 .menubar.menuitem:hover,
 .menubar .menuitem:hover,
 .menubar .menuitem *:hover {
-    border: 1px solid shade(@selection, 0.8);
+    /*border: 1px solid shade(@selection, 0.8);*/
     background-color: @selection;
     /*background-image: none;*/
     color: @selected_foreground;
+    text-shadow:none;
 }
 
 /* Separator */
