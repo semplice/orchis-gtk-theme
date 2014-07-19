@@ -27,47 +27,6 @@
     border-radius: 4px;
 }
 
-/*.scale.slider {
-    border-radius: 50%;
-    background-image: linear-gradient(to bottom,
-                                  shade(@background, 1.10),
-                                  @background
-                                  );
-                                  
-    box-shadow: inset 0 0 0 1px shade(@border,0.9);
-}
-*/
-
-.scale.slider:hover {
-    -gtk-image-effect: hilight;
-}
-
-/*
-.scale.slider:active {
-    border-radius: 50%;
-    background-image: linear-gradient(to bottom,
-                                  shade(@background, 1.30),
-                                  shade(@background, 1.20)
-                                  );
-                                  
-    box-shadow: inset 0 0 0 1px @selection;
-}
-
-.scale.slider:insensitive,
-.scale.slider:insensitive:backdrop {
-    border-radius: 50%;
-    background-image: none;
-    background-color: @insensitive_background;
-    box-shadow: inset 0 0 0 1px @insensitive_border;
-}
-
-.scale.slider:backdrop {
-    border-radius: 50%;
-    background-image: none;
-    background-color: @backdrop_background;
-    box-shadow: inset 0 0 0 1px @backdrop_border;
-}*/
-
 /* Positive fill colors */
 .scale.highlight.left,
 .scale.vertical.highlight.bottom,

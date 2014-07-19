@@ -567,3 +567,30 @@
     background: -gtk-scaled(url("assets/scale-slider-down-backdrop-dark.png"),url("assets/scale-slider-down-backdrop-dark@2.png"));
     background-image: url("assets/scale-slider-down-backdrop-dark.png");
 }
+
+/***********
+ * Spinner *
+ ***********/
+
+@keyframes spinner-dark {
+    0% { background-image: url("assets/spinner-01-dark.svg"); }
+    14% { background-image: url("assets/spinner-02-dark.svg"); }
+    28% { background-image: url("assets/spinner-03-dark.svg"); }
+    42% { background-image: url("assets/spinner-04-dark.svg"); }
+    56% { background-image: url("assets/spinner-05-dark.svg"); }
+    70% { background-image: url("assets/spinner-06-dark.svg"); }
+    84% { background-image: url("assets/spinner-07-dark.svg"); }
+    100% { background-image: url("assets/spinner-08-dark.svg"); }
+}
+
+.spinner {
+    background-color: transparent;
+    background-image: url("assets/spinner-01-dark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.spinner:active {
+    background-image: url("assets/spinner-01-dark.svg");
+    animation: spinner-dark 600ms infinite linear;
+}
