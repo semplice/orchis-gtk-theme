@@ -32,7 +32,7 @@ BirdieWidgetsTweetList * {
 
 .gala-workspaces-background {
     border-top: 1px solid alpha(#fff, 0.15);
-    background-color: #2d2d2d;
+    background-color: #444;
     
     background-image: linear-gradient(to bottom,
                                   alpha(#000, 0.30),
