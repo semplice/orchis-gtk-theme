@@ -167,6 +167,14 @@ GtkTreeMenu .menuitem *,
     text-shadow:none;
 }
 
+/* Separator */
+.menubar .menuitem.separator,
+.menubar.menuitem.separator {
+    -GtkMenuItem-horizontal-padding: 0;
+    -GtkWidget-separator-height: 1;
+    border: none;
+    color: @menu_separator;
+}
 
 /*******************
  * Checks & Radios *

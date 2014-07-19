@@ -127,6 +127,16 @@ ConversationListView.view.cell:selected {
 }
 
 /**********
+ * Noise *
+ *********/
+
+.album-list-view {
+    background-color: @base;
+    color: @text;
+    text-shadow: none;
+}
+
+/**********
  * Notify *
  *********/
 

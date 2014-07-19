@@ -38,9 +38,11 @@
     color: @insensitive_text;
 }
 
+
 /********
  * View *
  ********/
+
 .view {
     background-color: @base;
     color: @text;
@@ -167,10 +169,12 @@ GtkTreeView {
 
 GtkTreeView row:nth-child(even) {
     background-color: @base;
+    color: @text;
 }
 
 GtkTreeView row:nth-child(odd) {
     background-color: shade(@base,0.96);
+    color: @text;
 }
 
 GtkTreeView .entry {
