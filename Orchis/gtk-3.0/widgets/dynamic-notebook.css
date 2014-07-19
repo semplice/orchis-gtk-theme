@@ -31,6 +31,7 @@
                                   );
     border: 0 solid @border;
     border-radius: 0;
+    border: none;
 }
 
 .dynamic-notebook .notebook.header:backdrop {

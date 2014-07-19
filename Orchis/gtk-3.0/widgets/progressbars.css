@@ -1,3 +1,4 @@
+
 /* Copyright 2014 Sam Hewitt.
 *
 * This file is part of the Orchis GTK theme.
@@ -36,13 +37,28 @@ GtkProgressBar.progressbar {
                                   shade(@selection, 1.0)
                                   );
 
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid;
 
     border-image: linear-gradient(to bottom,
-                                  shade(@selection, 0.9),
-                                  shade(@selection, 0.8)
+                                  shade(@selection, 0.95),
+                                  shade(@selection, 0.9)
                                   ) 1 1 1 1;
+
+}
+
+GtkProgressBar.progressbar:backdrop {
+    border-radius: 0;
+    color: @selected_foreground;
+    text-shadow: none;
+    icon-shadow: none;
+
+    background-image: none;
+    background-color: shade(@backdrop_background, 0.95);
+
+    border: 1px solid;
+
+    border-image: none;
+    border-color:@backdrop_border;
 
 }
 
@@ -50,8 +66,7 @@ GtkProgressBar.trough {
 
     padding: 0;
 
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid;
 
     background-image: linear-gradient(to bottom,
                                   @trough_background,
@@ -83,12 +98,11 @@ GtkProgressBar.trough {
                                   shade(@selection, 1.0)
                                   );
 
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid;
 
     border-image: linear-gradient(to bottom,
-                                  shade(@selection, 0.9),
-                                  shade(@selection, 0.8)
+                                  shade(@selection, 0.95),
+                                  shade(@selection, 0.9)
                                   ) 1 1 1 1;
 }
 
@@ -109,12 +123,11 @@ GtkProgressBar.trough {
                                       @insensitive_progressbar_background_b
                                       );
 
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid;
 
     border-image: linear-gradient(to bottom,
-                                  shade(@insensitive_border, 0.9),
-                                  shade(@insensitive_border, 0.8)
+                                  shade(@insensitive_border, 0.95),
+                                  shade(@insensitive_border, 0.9)
                                   ) 1 1 1 1;
 }
 
@@ -135,12 +148,11 @@ GtkProgressBar.trough {
                                       @backdrop_progressbar_background_b
                                       );
 
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid;
 
     border-image: linear-gradient(to bottom,
-                                  shade(@backdrop_border, 0.9),
-                                  shade(@backdrop_border, 0.8)
+                                  shade(@backdrop_border, 0.95),
+                                  shade(@backdrop_border, 0.9)
                                   ) 1 1 1 1;
 }
 
@@ -155,8 +167,7 @@ GtkProgressBar.trough {
 
     padding: 0;
 
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid;
 
     background-image: linear-gradient(to bottom,
                                   @trough_background,
@@ -180,8 +191,7 @@ GtkProgressBar.trough {
 
     padding: 0;
 
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid;
 
     background-image:none;
     background-color:@insensitive_base;
@@ -197,8 +207,7 @@ GtkProgressBar.trough {
 
     padding: 0;
 
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid;
 
     background-image:none;
 

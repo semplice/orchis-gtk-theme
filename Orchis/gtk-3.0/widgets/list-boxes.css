@@ -21,6 +21,7 @@
  **************/
 EggListBox {
     background-color: @base;
+    color: @text;
 }
 
 EggListBox:hover {
@@ -34,6 +35,7 @@ EggListBox:selected {
 
 .list {
     background-color: @base;
+    color: @text;
 }
 
 .list-row:hover {
@@ -45,44 +47,10 @@ EggListBox:selected {
 }
 
 
-/****************
- * Content view *
- ****************/
-.content-view.view {
-    background-color: @content_view_background;
-}
-
-.content-view.view:insensitive {
-    background-color: @insensitive_base;
-    background-image: none;
-}
-
-.content-view.view:backdrop {
-    background-color: @background_backdrop;
-    background-image: none;
-}
-
-.content-view.view:selected {
-    background-color: @selection;
-    background-image: none;
-}
-
-.content-view.view:selected:backdrop {
-    background-color: @backdrop_selected_background;
-    background-image: none;
-}
-
-/* FIXME: EggListBox should set the .cell style class on
- * the background it renders for the children, like
- * GtkIconView and GtkTreeView do */
-.content-view.cell {
-    background-color: transparent;
-    background-image: none;
-}
-
 EggListBox.content-view:hover,
 .content-view.cell:hover {
     background-color: @background;
+    color: @text;
 }
 
 EggListBox.content-view:selected,

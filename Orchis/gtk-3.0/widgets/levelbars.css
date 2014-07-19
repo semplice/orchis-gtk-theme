@@ -23,28 +23,29 @@
 GtkLevelBar {
     -GtkLevelBar-min-block-width: 34;
     -GtkLevelBar-min-block-height: 3;
+    border-radius: 2px;
 }
 
 GtkLevelBar.vertical {
     -GtkLevelBar-min-block-width: 3;
     -GtkLevelBar-min-block-height: 34;
+    border-radius: 2px;
 }
 
-.level-bar.trough {
+.level-bar.trough,
+.level-bar.trough:backdrop {
+    border-radius: 2px;
     padding: 2px;
 }
 
-
 .level-bar.fill-block {
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid @selected_border;
+    background-color: @selection;
+}
 
-    border-color: @progressbar_border;
-    background-image: linear-gradient(to bottom,
-                                      shade(@progressbar_background_a, 0.9),
-                                      @progressbar_background_b 75%,
-                                      shade(@progressbar_background_a, 0.85)
-                                      );
+.level-bar.fill-block:backdrop {
+    background-color: shade(@backdrop_background, 0.95);
+    border: 1px solid @backdrop_border;
 }
 
 .level-bar.indicator-continuous.fill-block {
@@ -68,10 +69,6 @@ GtkLevelBar.vertical {
     margin: 1px 0;
 }
 
-/* discrete indicator border rounding,
-   uncomment when :nth-child will be working
-   on the widget
-
 .level-bar.indicator-discrete.fill-block.horizontal:first-child {
     border-radius: 2px 0 0 2px;
 }
@@ -88,7 +85,6 @@ GtkLevelBar.vertical {
     border-radius: 0 0 2px 2px;
 }
 
-*/
 
 .level-bar.fill-block.level-high {
     border-color: shade(@success, 0.85);

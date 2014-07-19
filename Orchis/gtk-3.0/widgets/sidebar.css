@@ -15,6 +15,7 @@
 * You should have received a copy of the GNU General Public License along
 * with the Orchis GTK theme. If not, see http://www.gnu.org/licenses/.
 */
+
 /************************
 * Sidebar & Source List *
 ************************/
@@ -41,11 +42,11 @@ GtkDialog .sidebar GtkScrolledWindow {
 .sidebar,
 .sidebar .view,
 .sidebar .view:selected:backdrop,
-.sidebar .view:prelight:selected:backdrop,
+.sidebar .view:hover:selected:backdrop,
 .source-list,
 .source-list.view,
 .source-list.view:selected:backdrop,
-.source-list.view:prelight:selected:backdrop {
+.source-list.view:hover:selected:backdrop {
     text-shadow: none;
     icon-shadow: none;
 }
@@ -60,17 +61,17 @@ GtkDialog .sidebar GtkScrolledWindow {
     color: transparent;
 }
 
-.sidebar .view:prelight,
-.source-list.view:prelight {
-    background-color: shade (@background, 1.05);
+.sidebar .view:hover,
+.source-list.view:hover {
+    background-color: shade (@background, 1.02);
 }
 
 .sidebar .view:selected,
-.sidebar .view:prelight:selected,
+.sidebar .view:hover:selected,
 .sidebar.view:selected,
-.sidebar.view:prelight:selected,
+.sidebar.view:hover:selected,
 .source-list.view:selected,
-.source-list.view:prelight:selected,
+.source-list.view:hover:selected,
 .source-list.view:selected:focus,
 .source-list.category-expander:hover {
 
@@ -79,12 +80,11 @@ GtkDialog .sidebar GtkScrolledWindow {
     border-width: 1px 0 1px 0;
 
     background-color: @selection;
-    box-shadow: inset 0 1px 0 0 alpha(#000, 0.03),
-                inset 0 -1px 0 0 alpha(#000, 0.10);
+    box-shadow: none;
 }
 
 GtkDialog .sidebar .view:selected,
-GtkDialog .sidebar .view:prelight:selected {
+GtkDialog .sidebar .view:hover:selected {
     background-image: none;
     background-color: alpha(#000, 0.05);
     color: @text;
@@ -99,9 +99,9 @@ GtkDialog .sidebar .view:prelight:selected {
 }
 
 .sidebar .view:selected:backdrop,
-.sidebar .view:prelight:selected:backdrop,
+.sidebar .view:hover:selected:backdrop,
 .source-list.view:selected:backdrop,
-.source-list.view:prelight:selected:backdrop {
+.source-list.view:hover:selected:backdrop {
     background-color: shade(@background, 0.95);
     border-color: @border;
 
@@ -113,7 +113,7 @@ GtkDialog .sidebar .view:prelight:selected {
 }
 
 GtkDialog .sidebar .view:selected:backdrop,
-GtkDialog .sidebar .view:prelight:selected:backdrop {
+GtkDialog .sidebar .view:hover:selected:backdrop {
     background-color: shade(@background, 0.95);
     border-color: @border;
     border-image:none;
@@ -121,7 +121,7 @@ GtkDialog .sidebar .view:prelight:selected:backdrop {
 }
 
 .sidebar-pane-separator,
-.sidebar-pane-separator:prelight,
+.sidebar-pane-separator:hover,
 .sidebar-pane-separator:selected {
 
     border-width: 0;
@@ -138,10 +138,10 @@ GtkDialog .sidebar .view:prelight:selected:backdrop {
 }
 
 .source-list.badge,
-.source-list.badge:prelight,
+.source-list.badge:hover,
 .source-list.badge:selected,
 .source-list.badge:selected:focus,
-.source-list.badge:prelight:selected {
+.source-list.badge:hover:selected {
     background-image: none;
     background-color: alpha(#000, 0.4);
     color: @background;
@@ -154,12 +154,12 @@ GtkDialog .sidebar .view:prelight:selected:backdrop {
 }
 
 .source-list.badge:selected,
-.source-list.badge:prelight:selected {
+.source-list.badge:hover:selected {
     color: @background;
 }
 
 .source-list.badge:selected:backdrop,
-.source-list.badge:selected:prelight:backdrop {
+.source-list.badge:selected:hover:backdrop {
     background-image: none;
     background-color: alpha(#000, 0.2);
     color: shade (@background, 0.95);

@@ -20,7 +20,7 @@
  * app notifications *
  *********************/
 .app-notification {
-    border: solid @borders;
+    border: solid @border;
     border-width: 0 1px 1px 1px;
     border-radius: 0 0 2px 2px;
     padding: 8px;
@@ -66,14 +66,6 @@ GtkAssistant .sidebar {
     color: mix(@foreground, @background, 0.1);
 }
 
-
-/***********
- * gtkhtml *
- ***********/
-GtkHTML {
-    background-color: @base;
-    color: @text;
-}
 
 /*************************
  * touch text selections *

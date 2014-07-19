@@ -31,8 +31,14 @@
     color: @backdrop_text;
     text-shadow: none;
     icon-shadow: none;
+}
 
-    color: @backdrop_foreground;
+.background:insensitive {
+    /* I want everything nice and flat in the backdrop window */
+    background-color: @insensitive_background;
+    color: @insensitive_text;
+    text-shadow: none;
+    icon-shadow: none;
 }
 
 /* FIXME: why do we still need this? */

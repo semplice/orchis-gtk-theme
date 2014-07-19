@@ -23,6 +23,7 @@
 .frame {
     background-color: transparent;
     border: 1px solid @border;
+    color: @text;
 }
 
 .frame:backdrop {
@@ -92,6 +93,8 @@
 GtkViewport {
     color: @text;
 }
+
+
 GtkViewport.frame {
     background-color: @base;
 }
@@ -104,9 +107,44 @@ GtkScrolledWindow.frame {
     background-color: @base;
 }
 
-GtkScrolledWindow GtkViewport.frame {
-    border-style: none;/* To avoid double border when a viewport is packed into a GtkScrolledWindow */
+/* To avoid double border when a viewport is packed into a GtkScrolledWindow */
+
+GtkScrolledWindow GtkViewport.frame,
+GtkPaned .frame,
+GraniteWidgetsPopOver .frame,
+GraniteWidgetsStaticNotebook .frame {
+    border: none;
 }
+
+/************
+ * List Box *
+ ************/
+
+GtkListBoxRow:selected,
+GtkListBoxRow:selected:backdrop,
+.view:selected {
+    background-color: shade (@base, 0.80);
+    color: @text;
+}
+
+GtkListBoxRow:selected:focus,
+.view:selected:focus {
+    background-color: @selection;
+    color: @selected_foreground;
+}
+
+/* FIXME: This doesn't work with only-child
+
+GtkListBoxRow:only-child {
+    border-bottom: none;
+    box-shadow: none;
+}
+
+GtkListBoxRow:first-child {
+    border-bottom: solid 1px alpha(#fff, 0.04);
+    box-shadow: inset 0 -1px shade(@base_color, 0.85);
+}
+*/
 
 /************
  * Treeview *
@@ -121,9 +159,22 @@ GtkTreeView.separator,
 }
 
 GtkTreeView {
-    -GtkTreeView-vertical-separator: 0;
-    -GtkWidget-focus-line-width: 1;
-    -GtkWidget-focus-padding: 1;
+    -GtkTreeView-vertical-separator: 5px;
+    -GtkTreeView-horizontal-separator: 6px;
+    -GtkTreeView-expander-size: 8px;
+    -GtkTreeView-grid-line-pattern: "\000\000";
+}
+
+GtkTreeView row:nth-child(even) {
+    background-color: @base;
+}
+
+GtkTreeView row:nth-child(odd) {
+    background-color: shade(@base,0.96);
+}
+
+GtkTreeView .entry {
+    border-radius: 0;
 }
 
 GtkTreeView.dnd {
@@ -138,12 +189,22 @@ GtkTreeView .entry {
 }
 
 /************
- * Textview *
+ * TextView *
  ************/
 
 GtkTextView {
     background-color: @base;
     color: @text;
+}
+
+GtkTextView:backdrop {
+    background-color: @backdrop_base;
+    color: @backdrop_text;
+}
+
+GtkTextView:insensitive {
+    background-color: @insensitive_base;
+    color: @insensitive_text;
 }
 
 /************
@@ -198,12 +259,27 @@ GtkIconView.content-view.check:selected {
 .content-view.view:selected,
 .content-view.view:active {
     background-color: @selection;
+    background-image: none;
 }
 
 .content-view.view:insensitive {
     background-color: @insensitive_background;
 }
 
+.content-view.view:backdrop {
+    background-color: @background_backdrop;
+    background-image: none;
+}
+
+.content-view.view:selected:backdrop {
+    background-color: @backdrop_selected_background;
+    background-image: none;
+}
+
+.content-view.cell {
+    background-color: transparent;
+    background-image: none;
+}
 
 .content-view.view.check,
 .content-view.view.check:active {
@@ -236,6 +312,12 @@ GtkIconView.content-view.check:selected {
 /* Drawing area */
 GtkDrawingArea {
     background-color: @base;
+    color: @text;
+}
+
+GtkDrawingArea:backdrop {
+    background-color: @backdrop_base;
+    color: @backdrop_text;
 }
 
 GtkDrawingArea:insensitive {
@@ -248,6 +330,12 @@ GtkDrawingArea:insensitive {
 GtkHTML {
     background-color: @base;
     color: @text;
+}
+
+GtkHTML:active:backdrop,
+GtkHTML:backdrop {
+    background-color: @backdrop_base;
+    color: @backdrop_text;
 }
 
 /* needed for webkit/GtkStyle/Evolution compatibility */
