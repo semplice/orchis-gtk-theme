@@ -23,127 +23,20 @@
 GtkInfoBar {
     border-width: 0;
     border-style: none;
-}
-
-.info,
-.question,
-.warning,
-.error {
-    background-color: @infobar_background;
-    color: @infobar_foreground;
-    text-shadow: none;
-    border-color: shade(@infobar_background, 0.8);
-}
-
-.info:backdrop,
-.warning:backdrop,
-.question:backdrop,
-.error:backdrop {
-    text-shadow: none;
-    background-color: darker(@backdrop_background);
-    color: @backdrop_foreground;
-    border-color: @backdrop_border;
-}
-
-.info .button.close,
-.warning .button.close,
-.question .button.close,
-.error .button.close {
+    background-color: @gradient_a;
+    background-image: linear-gradient(to bottom,
+                                  shade(@gradient_b, 0.96),
+                                  shade(@gradient_a, 0.96)
+                                  );
     color: @text;
-    icon-shadow: 0 1px @text_shadow;
-}
-
-.info .button.close:hover,
-.warning .button.close:hover,
-.question .button.close:hover,
-.error .button.close:hover {
-    background-image: linear-gradient(to bottom,
-				      alpha(white, 0.3),
-				      alpha(white, 0.2) 30%,
-				      alpha(#000, 0.02));
-}
-
-.info .button.close:active,
-.warning .button.close:active,
-.question .button.close:active,
-.error .button.close:active {
-    color: @infobar_foreground;
-    background-image: linear-gradient(to bottom,
-				      alpha(#000, 0.1),
-				      transparent);
-}
-
-.info .button.close:backdrop,
-.warning .button.close:backdrop,
-.question .button.close:backdrop,
-.error .button.close:backdrop {
-    color: @backdrop_foreground;
-
-    icon-shadow: none;
-}
-
-.info .button.close:backdrop:hover,
-.warning .button.close:backdrop:hover,
-.question .button.close:backdrop:hover,
-.error .button.close:backdrop:hover {
-    background-image: none;
-    background-color: transparent;
-    border-color: transparent;
-}
-
-.info .entry,
-.info .entry:focus,
-.info .button,
-.info .button:insensitive,
-.info .button:active,
-.warning .entry,
-.warning .entry:focus,
-.warning .button,
-.warning .button:insensitive,
-.warning .button:active,
-.error .entry,
-.error .entry:focus,
-.error .button,
-.error .button:insensitive,
-.error .button:active,
-.question .entry,
-.question .entry:focus,
-.question .button,
-.question .button:insensitive,
-.question .button:active {
-    border-image: none;
-    color: @foreground;
-    border-color: darker(@infobar_background);
-    border-style: solid;
-    border-width: 1px;
-}
-
-.info .entry:backdrop,
-.info .button:backdrop,
-.info .button:insensitive:backdrop,
-.info .button:active:backdrop,
-.warning .entry:backdrop,
-.warning .button:backdrop,
-.warning .button:insensitive:backdrop,
-.warning .button:active:backdrop,
-.question .entry:backdrop,
-.question .button:backdrop,
-.question .button:insensitive:backdrop,
-.question .button:active:backdrop,
-.error .entry:backdrop,
-.error .button:backdrop,
-.error .button:insensitive:backdrop,
-.error .button:active:backdrop {
-    border-image: none;
-
-    border-color: @backdrop_border;
-    border-style: solid;
-    border-width: 1px;
+    text-shadow: none;
+    border: solid @border;
+    border-bottom-width: 1px;
 }
 
 
 GtkInfoBar GtkLabel {
-    color: @infobar_foreground;
+    color: @text;
     icon-shadow: 0 1px @text_shadow;
     text-shadow: 0 1px @text_shadow;
 }
@@ -152,7 +45,6 @@ GtkInfoBar .entry,
 GtkInfoBar .menu {
     color: @text;
 }
-
 
 GtkInfoBar GtkLabel:insensitive {
     color: @insensitive_text;
@@ -164,12 +56,14 @@ GtkInfoBar .button:focus,
 
     text-shadow: none;
     icon-shadow: none;
-    
-    background-image: none; 
-    background-color: transparent;  
+    background-image: linear-gradient(to bottom,
+                                  @button_gradient_a,
+                                  @button_gradient_b
+                                  );
 
-    border: 1px solid shade (@selection, 0.8);
-    
+    border-radius: 3px;
+    border: 1px solid @border;
+
     box-shadow: inset 0 0 0 1px alpha(#fff, 0.05),
                 inset 0 1px 0 0 alpha(#fff, 0.45),
                 inset 0 -1px 0 0 alpha(#fff, 0.15),
@@ -178,15 +72,19 @@ GtkInfoBar .button:focus,
 
 GtkInfoBar .button:active,
 GtkInfoBar .button:hover:active {
-    background-image: none;
-    background-color: alpha(#000, 0.05);
-    border-color: alpha(#000, 0.35);
+
+    background-image: linear-gradient(to bottom,
+                                  @button_active_gradient_a,
+                                  @button_active_gradient_b
+                                  );
+
+    border-radius: 3px;
+    border: 1px solid @selection;
 }
 
-GtkInfoBar .button:insensitive,
-GtkInfoBar .button:hover:insensitive {
+GtkInfoBar .button:insensitive {
     background-image: none;
-    background-color: transparent; 
+    background-color: @insensitive_background; 
 
-    border-color: alpha(#000, 0.18);
+    border: 1px solid @insensitive_border;
 }
