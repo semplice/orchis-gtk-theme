@@ -33,7 +33,6 @@
     text-shadow: 0 1px alpha(#000, 0.2);
     icon-shadow: 0 1px alpha(#000, 0.2);
 
-    padding: 2px;
 
     border-radius: 3px;
     border: 1px solid shade(@selection, 0.95);

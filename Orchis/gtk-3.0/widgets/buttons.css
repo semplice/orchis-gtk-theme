@@ -44,7 +44,6 @@
 .button:focus,
 .button:hover {
 
-    padding: 3px 8px;
     color: @text;
 
     background-image: linear-gradient(to bottom,
@@ -61,7 +60,6 @@
 /* Active/Pressed Button */
 .button:active {
 
-    padding: 3px 8px;
     color: @text;
 
     background-image: linear-gradient(to bottom,

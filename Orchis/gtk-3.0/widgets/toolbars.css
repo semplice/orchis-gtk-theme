@@ -73,7 +73,6 @@ GtkToolbar:backdrop {
 .toolbar GtkComboBox,
 .toolbar .button {
 
-    padding: 3px 8px;
 
     background-image: linear-gradient(to bottom,
                                   @button_gradient_a,
@@ -92,7 +91,6 @@ GtkToolbar:backdrop {
 .toolbar GtkComboBox:active,
 .toolbar .button:active {
 
-    padding: 3px 8px;
     color: @text;
 
     background-image: linear-gradient(to bottom,
@@ -117,7 +115,6 @@ GtkToolbar:backdrop {
 /* Hover */
 .toolbar .button:hover,
 .toolbar .button:active:hover {
-    padding: 3px 8px;
     color: @text;
 
     background-image: linear-gradient(to bottom,
@@ -238,6 +235,7 @@ GtkToolbar:backdrop {
 /* Hover buttons */
 .primary-toolbar .button:hover,
 .primary-toolbar .button:active:hover {
+
     color: @hover_text;
     background-image: linear-gradient(to bottom,
                                   @button_hover_gradient_a,
@@ -361,7 +359,6 @@ GtkToolbar:backdrop {
 
 /* Buttons */
 .inline-toolbar .button.text-button {
-    padding: 2px 16px;
     background-image: linear-gradient(to bottom,
                               @button_gradient_a,
                               @button_gradient_b
@@ -383,7 +380,6 @@ GtkToolbar:backdrop {
 .inline-toolbar GtkComboBox,
 .inline-toolbar .button {
     color: @text;
-    padding: 2px;
     background-image: linear-gradient(to bottom,
                                   @button_gradient_a,
                                   @button_gradient_b
@@ -423,6 +419,7 @@ GtkToolbar:backdrop {
 
 /* Hover */
 .inline-toolbar .button:hover {
+
     color: @hover_text;
     background-image: linear-gradient(to bottom,
                                   @button_hover_gradient_a,
