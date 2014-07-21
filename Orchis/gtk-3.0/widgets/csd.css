@@ -56,6 +56,7 @@
 }
 
 .titlebar:backdrop {
+    color: @backdrop_text;
     text-shadow: none;
     background-image: none;
     background-color: @backdrop_background;
@@ -114,6 +115,7 @@
     color: @backdrop_text;
     border-image: none;
     icon-shadow: none;
+    box-shadow: none;
 }
 
 /* Window Frame */
