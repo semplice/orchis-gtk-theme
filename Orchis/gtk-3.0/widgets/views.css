@@ -38,6 +38,17 @@
     color: @insensitive_text;
 }
 
+/*Window*/
+GtkWindow {
+    color: @text;
+    background-color: @background;
+}
+GtkPaned {
+    background-color: @background;
+}
+GtkEventBox {
+    background-color: @background;
+}
 
 /********
  * View *
