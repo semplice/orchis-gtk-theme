@@ -220,6 +220,7 @@ column-header:last-child .button:backdrop {
 
 /* unfocused window: generic element borders */
 .button:backdrop,
+.header-bar .button:backdrop,
 .spinbutton.vertical .button:backdrop,
 GtkComboBox.combobox-entry .entry:backdrop,
 GtkComboBox.combobox-entry .button:backdrop,

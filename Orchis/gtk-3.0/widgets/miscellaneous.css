@@ -30,8 +30,19 @@
 }
 
 /*********
+ * text *
+ *********/
+.h1 { font: 24; }
+.h2 { font: 18; }
+.h3 { font: 12; }
+
+/*********
  * label *
  *********/
+GtkLabel {
+    color: @text;
+}
+
 GtkLabel,
 GtkLabel:active,
 GtkLabel:insensitive {

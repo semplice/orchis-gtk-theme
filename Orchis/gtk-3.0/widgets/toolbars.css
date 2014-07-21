@@ -181,7 +181,7 @@ GtkToolbar:backdrop {
 .primary-toolbar.toolbar:backdrop,
 .primary-toolbar .toolbar:backdrop {
     border: solid @backdrop_border;
-    border-width: 1px 0px 1px 0px;
+    border-bottom-width: 1px;
     background-color: shade(@backdrop_background,0.95);
     background-image: linear-gradient(to bottom,
                                   @backdrop_gradient_a,
@@ -313,12 +313,9 @@ GtkToolbar:backdrop {
 
 .inline-toolbar .toolbar,
 .inline-toolbar.toolbar {
-    border: solid @border;
-    border-width: 0px 1px 1px 1px;
-    padding-top: 4px;
-    padding-left: 4px;
-    padding-bottom: 4px;
-    padding-right: 4px;
+    border: 1px solid @border;
+    border-top-width: 0px;
+    padding: 4px;
     background-color: shade(@gradient_b, 0.99);
     background-image: linear-gradient(to bottom,
                                   shade(@gradient_b, 0.99),
@@ -330,12 +327,9 @@ GtkToolbar:backdrop {
 
 .inline-toolbar .toolbar:backdrop,
 .inline-toolbar.toolbar:backdrop {
-    border: solid @backdrop_border;
-    border-width: 0px 1px 1px 1px;
-    padding-top: 4px;
-    padding-left: 4px;
-    padding-bottom: 4px;
-    padding-right: 4px;
+    border: 1px solid @backdrop_border;
+    border-top-width: 0px;
+    padding: 4px;
     background-color: @backdrop_background;
     background-image: linear-gradient(to bottom,
                                   @backdrop_gradient_a,
@@ -367,10 +361,7 @@ GtkToolbar:backdrop {
 
 .inline-toolbar .button.image-button,
 .inline-toolbar .button.image-button:active {
-    padding-top: 2px;
-    padding-left: 2px;
-    padding-bottom: 2px;
-    padding-right: 2px;
+    padding: 2px;
     background-image: linear-gradient(to bottom,
                               @button_gradient_a,
                               @button_gradient_b
@@ -527,8 +518,8 @@ GtkToolbar:backdrop {
 
 .bottom-toolbar.toolbar {
     padding: 0px;
-    border: 1px solid @border;
-    border-width: 1px 0 0 0;
+    border: solid @border;
+    border-top-width: 1px;
     background-color: @background;
     /*box-shadow: inset 0 1px 0 0 alpha(#fff, 0.50),
                 inset 0 -1px 0 0 alpha(#fff, 0.20);*/

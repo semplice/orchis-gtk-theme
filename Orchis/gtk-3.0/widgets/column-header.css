@@ -52,8 +52,10 @@ column-header .button:backdrop:focus,
 column-header .button:active:backdrop:focus {
     border: solid @backdrop_border;
     border-width: 0 1px 1px 0;
+    border-bottom-width: 1px;
     background-color: @backdrop_background;
     background-image: none;
+    box-shadow: none;
 }
 
 column-header .button:insensitive,

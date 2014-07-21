@@ -200,7 +200,7 @@ ConversationListView.view.cell:selected {
 .search-entry-large:focus {
     border: none;
     font: 18;
-    font-weight: light;
+    font-weight: 300;
     background-image: none;
     background-color: transparent;
     box-shadow: none;
