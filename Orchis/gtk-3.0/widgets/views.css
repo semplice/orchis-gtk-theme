@@ -38,16 +38,42 @@
     color: @insensitive_text;
 }
 
-/*Window*/
+/*************************
+ * Basic Window Elements *
+ *************************/
+
+/* Some of these are deprecated but still cause theme errors. */
+GtkVBox,
+GtkStatusbar,
+GtkEventBox,
+GtkPaned,
+GtkViewport,
+GtkScrolledWindow,
 GtkWindow {
     color: @text;
     background-color: @background;
 }
-GtkPaned {
-    background-color: @background;
+
+GtkVBox:backdrop,
+GtkStatusbar:backdrop,
+GtkEventBox:backdrop,
+GtkPaned:backdrop,
+GtkViewport:backdrop,
+GtkScrolledWindow:backdrop,
+GtkWindow:backdrop {
+    color: @backdrop_text;
+    background-color: @backdrop_background;
 }
-GtkEventBox {
-    background-color: @background;
+
+GtkVBox:insensitive,
+GtkStatusbar:insensitive,
+GtkEventBox:insensitive,
+GtkPaned:insensitive,
+GtkViewport:insensitive,
+GtkScrolledWindow:insensitive,
+GtkWindow:insensitive {
+    color: @insensitive_text;
+    background-color: @insensitive_background;
 }
 
 /********
@@ -105,6 +131,7 @@ GtkEventBox {
  ************/
 GtkViewport {
     color: @text;
+    background-color: inherit;
 }
 
 
@@ -115,6 +142,10 @@ GtkViewport.frame {
 /*******************
  * Scrolled Window *
  *******************/
+GtkScrolledWindow {
+    background-color: inherit;
+}
+
 GtkScrolledWindow.frame {
     border: 1px solid @border;
     background-color: @base;

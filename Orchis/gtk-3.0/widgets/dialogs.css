@@ -37,9 +37,7 @@ GtkMessageDialog .titlebar {
     background-image: none;
     background-color: @background;
 
-    box-shadow: inset 1px 0 0 0 alpha(#fff, 0.20),
-                inset -1px 0 0 0 alpha(#fff, 0.20),
-                inset 0 1px 0 0 #fff;
+    box-shadow: none;
 }
 
 GtkDialog .titlebar:backdrop,
@@ -47,11 +45,9 @@ GtkMessageDialog .titlebar:backdrop {
     border: none;
 
     background-image: none;
-    background-color: @background;
+    background-color: @backdrop_background;
 
-    box-shadow: inset 1px 0 0 0 alpha(#fff, 0.20),
-                inset -1px 0 0 0 alpha(#fff, 0.20),
-                inset 0 1px 0 0 #fff;
+    box-shadow: none;
 
     color: shade (@text, 1.20);
 }
@@ -59,10 +55,6 @@ GtkMessageDialog .titlebar:backdrop {
 GtkDialog,
 GtkMessageDialog {
     box-shadow: none;
-    /*box-shadow: inset 1px 0 0 0 alpha(#fff, 0.20),
-                inset -1px 0 0 0 alpha(#fff, 0.20),
-                inset 0 -1px 0 0 alpha(#fff, 0.30);*/
-
 }
 
 GtkDialog .toolbar {

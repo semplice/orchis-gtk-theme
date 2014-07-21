@@ -21,7 +21,8 @@
  ***********/
 
 /* Main Colors*/
-.toolbar {
+.toolbar,
+GtkToolbar {
     color: @text;
     border: solid @border;
     border-bottom-width: 1px;
@@ -33,7 +34,8 @@
                                   );
 }
 
-.toolbar:insensitive {
+.toolbar:insensitive,
+GtkToolbar:insensitive {
     color: @insensitive_text;
     border: solid @insensitive_border;
     border-bottom-width: 1px;
@@ -43,7 +45,8 @@
                                   );
 }
 
-.toolbar:backdrop {
+.toolbar:backdrop,
+GtkToolbar:backdrop {
     color: @backdrop_text;
     border: solid @backdrop_border;
     border-bottom-width: 1px;
