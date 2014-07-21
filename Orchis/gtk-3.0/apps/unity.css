@@ -70,13 +70,13 @@ UnityDecoration.top:backdrop {
 
 UnityDecoration.left,
 UnityDecoration.right {
-    background-color: @border;
+    /*background-color: @border;*/
     background-size: 1px;
     background-repeat: repeat-x;
-    /*background-image: -gtk-gradient (linear, left top, left bottom,
+    background-image: -gtk-gradient (linear, left top, left bottom,
                                      color-stop (0, @panel),
                                      color-stop (0.5, @border),
-                                     color-stop (1, @border));*/
+                                     color-stop (1, @border));
     background-image: none;
 }
 
@@ -88,12 +88,12 @@ UnityDecoration.bottom {
 UnityDecoration.left:backdrop,
 UnityDecoration.right:backdrop,
 UnityDecoration.bottom:backdrop {
-    background-color: @backdrop_border;
+    /*background-color: @backdrop_border;*/
     color: @backdrop_text;
-    /*background-image: -gtk-gradient (linear, left top, left bottom,
+    background-image: -gtk-gradient (linear, left top, left bottom,
                                      color-stop (0, @backdrop_background),
                                      color-stop (0.5, @backdrop_background),
-                                     color-stop (1, @backdrop_background));*/
+                                     color-stop (1, @backdrop_background));
     /*background-image: none;*/
 }
 
