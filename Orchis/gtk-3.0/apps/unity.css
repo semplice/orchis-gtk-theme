@@ -88,7 +88,7 @@ UnityDecoration.bottom {
 UnityDecoration.left:backdrop,
 UnityDecoration.right:backdrop,
 UnityDecoration.bottom:backdrop {
-    /*background-color: @backdrop_border;*/
+    background-color: @backdrop_border;
     color: @backdrop_text;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      color-stop (0, @backdrop_background),
