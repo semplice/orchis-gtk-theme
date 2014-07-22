@@ -135,6 +135,15 @@ ConversationListView.view.cell:selected {
     color: @text;
 }
 
+/***************
+ * SwitchBoard *
+ ***************/
+
+.category-label {
+    color: @text;
+    text-shadow: 0 1px @text_shadow;
+}
+
 /**********
  * Notify *
  *********/

@@ -21,6 +21,7 @@
  *******************/
 
 .notebook {
+    
     background-color: @base;
     border:none;
     
@@ -73,6 +74,7 @@
 /*----- Tabs -----*/
 
 .notebook tab {
+    padding-top: 
     border: none;
     border-radius: 0;
     background: none;
@@ -88,6 +90,13 @@
     border: none;
     background: none;
     color: @text;
+}
+
+.notebook tab:hover {
+    background-image: linear-gradient(to bottom,
+                                  alpha(#fff, 0.10),
+                                  alpha(#fff, 0.20)
+                                  );
 }
 
 .notebook tab:backdrop {
@@ -179,12 +188,12 @@
 .notebook tab.top {
     padding-top: 2px;
     padding-left: 8px;
-    padding-bottom: 1px;
+    padding-bottom: 3px;
     padding-right: 8px;
 }
 
 .notebook tab.bottom {
-    padding-top: 1px;
+    padding-top: 3px;
     padding-left: 8px;
     padding-bottom: 2px;
     padding-right: 8px;

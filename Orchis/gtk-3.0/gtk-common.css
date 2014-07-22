@@ -73,6 +73,7 @@
 @define-color theme_base @base;
 
 @define-color theme_background @background;
+@define-color bg_color @background;
 @define-color theme_foreground @foreground;
 
 @define-color theme_selected_background @selected_background;
@@ -147,6 +148,7 @@
 /*****************
  * Miscellaneous *
  *****************/
+@define-color placeholder_text_color shade(@text, 2.0);
 @define-color view_symbolic shade(@internal_element, 0.50);
 
 /* GNOME Apps */
