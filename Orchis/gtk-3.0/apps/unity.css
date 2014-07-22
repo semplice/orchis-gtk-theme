@@ -60,6 +60,14 @@ UnityDecoration.top.menuitem {
     text-shadow: 0 1px @text_shadow;
 }
 
+UnityDecoration.top:backdrop {
+    box-shadow: none;
+    background-image: none;
+    background-color: @panel;
+    color: alpha(@panel_text, 0.8);
+    text-shadow: none;
+}
+
 UnityDecoration.left,
 UnityDecoration.right {
     background-size: 1px;
@@ -69,6 +77,13 @@ UnityDecoration.right {
 }
 
 UnityDecoration.bottom {
+    background-image: none;
+    background-color: @panel;
+}
+
+UnityDecoration.left:backdrop,
+UnityDecoration.right:backdrop,
+UnityDecoration.bottom:backdrop {
     background-image: none;
     background-color: @panel;
 }
