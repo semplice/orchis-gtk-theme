@@ -66,6 +66,8 @@ UnityDecoration.top.menuitem:backdrop {
 }
 
 UnityDecoration.top:backdrop {
+    border: @panel;
+    background-color: @panel;
     color: alpha(@panel_text, 0.8);
     text-shadow: none;
 }
