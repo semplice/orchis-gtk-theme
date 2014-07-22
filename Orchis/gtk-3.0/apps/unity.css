@@ -62,13 +62,13 @@ UnityDecoration.top.menuitem {
 }
 
 UnityDecoration.top.menuitem:backdrop {
-    border: 1px solid @panel;
-    border-bottom-width: 0;
     color: alpha(@panel_text, 0.8);
     text-shadow: none;
 }
 
 UnityDecoration.top:backdrop {
+    border: 1px solid @panel;
+    border-bottom-width: 0;
     box-shadow: none;
     background-image: none;
     background-color: @panel;
@@ -161,4 +161,9 @@ UnityPanelWidget,
     -GtkWidget-separator-height: 1;
     border: none;
     color: @menu_separator;
+}
+
+/* Force Quit */
+SheetStyleDialog.unity-force-quit {
+     background-color: #a348b1;
 }
