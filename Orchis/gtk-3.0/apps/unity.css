@@ -56,8 +56,13 @@ UnityDecoration.top {
 }
 
 UnityDecoration.top.menuitem {
-    color: @text;
-    text-shadow: 0 1px @text_shadow;
+    color: @panel_text;
+    text-shadow: 0 1px @panel_text_shadow;
+}
+
+UnityDecoration.top.menuitem:backdrop {
+    color: alpha(@panel_text, 0.8);
+    text-shadow: none;
 }
 
 UnityDecoration.top:backdrop {
@@ -95,7 +100,6 @@ UnityDecoration.bottom:backdrop {
 
 UnityPanelWidget,
 .unity-panel {
-	border-bottom: 1px solid shade(@panel,0.99);
 	background-color: @panel;
 	background-image: none;
 	color: @panel_text;
