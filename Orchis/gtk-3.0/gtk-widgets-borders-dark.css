@@ -186,8 +186,8 @@ column-header.button:active:hover,
 column-header .button:active:hover,
 column-header .button.dnd {
     border-image: linear-gradient(to top,
-                                  mix(@borders, @theme_base_color, 0.5),
-                                  @theme_base_color
+                                  mix(@border, @base, 0.5),
+                                  @base
                                   ) 0 1 1 0;
 }
 
@@ -201,8 +201,8 @@ column-header:last-child .button:backdrop {
 column-header.button:insensitive,
 column-header .button:insensitive {
     border-image: linear-gradient(to top,
-                                  mix(@insensitive_borders, @insensitive_bg_color, 0.5),
-                                  @insensitive_bg_color
+                                  mix(@insensitive_border, @insensitive_background, 0.5),
+                                  @insensitive_background
                                   ) 0 1 1 0;
 }
 

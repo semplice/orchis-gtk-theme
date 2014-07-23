@@ -1,0 +1,63 @@
+/*********
+ * Lists *
+ *********/
+.list, .list-row {
+    background-color: white;
+    border-color: @border;
+}
+
+.list:backdrop,
+.list-row:backdrop {
+    background-color: #fcfcfc;
+    border-color: #a8a8a8;
+}
+
+.list-row,
+.grid-child {
+    padding: 2px;
+}
+
+.list-row .button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-image: none;
+    background-image: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.list-row .button:hover {
+    background-image: none;
+    border: none;
+    background-color: shade(@background, 1.1);
+}
+
+.list-row .button:active {
+    color: @selection;
+    box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.3);
+}
+
+.button.list-row:active:selected {
+    box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
+
+.button.list-row:hover:selected {
+    background-color: shade(@selection, 1.2);
+}
+
+.list-row:selected,
+.list-row .button:selected,
+.list-row .button:selected:hover {
+    color: white;
+    background-color: @selection;
+}
+.list-row:selected:backdrop,
+.list-row .button:backdrop:selected:hover {
+    color: @backdrop_text;
+}
+
+/*.list-row.button:selected,
+.list-row:selected {
+  background-color: $selected_bg_color;
+  color: $selected_fg_color;
+  &:backdrop { color: $backdrop_base_color;}
+}*/

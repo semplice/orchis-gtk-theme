@@ -45,17 +45,6 @@ GtkLabel:insensitive {
     background-color: transparent;
 }
 
-/************
- * expander *
- ************/
-.expander {
-    color: alpha(@foreground, 0.7);
-}
-
-.expander:hover {
-    color: alpha(@foreground, 0.8);
-}
-
 /*************
  * assistant *
  *************/
@@ -67,7 +56,7 @@ GtkAssistant .sidebar {
     padding: 3px;
     border-right-width: 3px;
     border-style: solid;
-    border-right-color: @borders;
+    border-right-color: @border;
     border-radius: 0;
     background-color: @background;
     color: mix(@foreground, @background, 0.1);

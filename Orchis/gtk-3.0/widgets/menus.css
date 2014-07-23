@@ -67,13 +67,15 @@ GtkComboBox .menu {
 /*************
  * Menu Item *
  *************/
-GtkTreeMenu .menuitem,
-GtkTreeMenu .menuitem *,
-.menuitem,
+
+
+GtkTreeMenu .menuitem {
+    padding: 6px;
+}
+
 .menu .menuitem {
     padding: 6px;
     border:none;
-    color: @text;
 
     -GtkMenuItem-arrow-scaling: 0.5;
 }

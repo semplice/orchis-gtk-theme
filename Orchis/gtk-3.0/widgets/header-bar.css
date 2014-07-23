@@ -117,6 +117,15 @@
 }
 
 
+.header-bar .button:backdrop:hover {
+    border: 1px solid shade(@backdrop_border, 1.1);
+    background-image: linear-gradient(to bottom,
+                                  shade(@backdrop_gradient_a, 1.05),
+                                  shade(@backdrop_gradient_b, 1.05)
+                                  );
+}
+
+
 .header-bar GtkComboBox:insensitive,
 .header-bar .button:insensitive {
     color: @insensitive_text;
