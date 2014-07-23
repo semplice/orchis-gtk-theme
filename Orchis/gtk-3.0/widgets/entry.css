@@ -77,8 +77,7 @@
 
 .entry.progressbar,
 .entry.progressbar:focus {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 0 2px 0 2px;
     border-image: none;
     border-style: none;
     background-color: transparent;
@@ -105,8 +104,7 @@
 }
 
 .entry.progressbar:backdrop {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 0 2px 0 2px;
     border-image: none;
     border-style: none;
     background-color: transparent;
