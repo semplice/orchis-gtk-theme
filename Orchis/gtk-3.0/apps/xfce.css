@@ -20,7 +20,6 @@
  * XFCE *
  *******/
 
-
 XfceHeading {
     margin: 0;
     padding: 0;
@@ -34,6 +33,8 @@ XfceHeading {
     background-color: @panel;
     color: @panel_text;
     font: normal;
+    text-shadow: 0 1px @panel_text_shadow;
+    icon-shadow: 0 1px @panel_text_shadow;
 }
 
 .xfce4-panel .button {
@@ -47,6 +48,8 @@ XfceHeading {
     background-color: shade(@panel, 0.8);
     background-image: none;
     color: @panel_text;
+    text-shadow: 0 1px @panel_text_shadow;
+    icon-shadow: 0 1px @panel_text_shadow;
 }
 
 .xfce4-panel .button:hover,
@@ -54,8 +57,12 @@ XfceHeading {
     background-color: mix(@panel, @panel_text, 0.21);
     background-image: none;
     color: shade(@panel_text, 1.08);
+    text-shadow: 0 1px @panel_text_shadow;
+    icon-shadow: 0 1px @panel_text_shadow;
 }
 
 .xfce4-panel .menu {
     -gtk-image-effect: none;
+    text-shadow: 0 1px @panel_text_shadow;
+    icon-shadow: 0 1px @panel_text_shadow;
 }
