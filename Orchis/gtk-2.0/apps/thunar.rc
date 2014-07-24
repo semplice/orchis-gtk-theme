@@ -9,4 +9,3 @@ style "sidepane" {
 
 widget_class "*ThunarShortcutsView*" style "sidepane"
 widget_class "*ThunarTreeView*" style "sidepane"
-widget_class "*ThunarLocationEntry*" style "murrine-entry"
