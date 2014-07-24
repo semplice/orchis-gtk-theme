@@ -2389,3 +2389,9 @@ widget "*openoffice-toplevel*GtkEntry"        style "libreoffice_entry"
 widget "*openoffice-toplevel*GtkSpinButton"   style "libreoffice_entry"
 widget "*libreoffice-toplevel*GtkEntry"       style "libreoffice_entry"
 widget "*libreoffice-toplevel*GtkSpinButton"  style "libreoffice_entry"
+
+# Includes
+include "apps/firefox.rc"
+include "apps/gnome-terminal.rc"
+include "apps/xfce.rc"
+include "apps/thunar.rc"
