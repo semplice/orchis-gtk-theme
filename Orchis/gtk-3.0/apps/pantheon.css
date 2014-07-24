@@ -130,7 +130,12 @@ ConversationListView.view.cell:selected {
  * Noise *
  *********/
 
-.album-list-view * {
+NoiseWidgetsTileView {
+    background-color: @base;
+    color: @text;
+}
+
+.tile-view {
     background-color: @base;
     color: @text;
 }

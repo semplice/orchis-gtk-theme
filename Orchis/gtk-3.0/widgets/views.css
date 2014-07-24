@@ -134,12 +134,11 @@ GtkWindow:insensitive {
  ************/
 GtkViewport {
     color: @text;
-    background-color: inherit;
 }
 
 
 GtkViewport.frame {
-    background-color: @base;
+    background-color: @background;
 }
 
 /*******************

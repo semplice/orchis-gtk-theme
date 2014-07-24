@@ -20,23 +20,15 @@
  * Action bars *
  ***************/
 .action-bar {
-    border: 1px solid @border;
-    border-bottom-width: 0;
-
-    box-shadow: none;
-    background-image: linear-gradient(to bottom,
-                                      shade(@background, 1.05),
-                                      shade(@background, 0.95)
-                                      );
-
+    border: solid @border;
+    border-top-width: 1px;
+    background-color: @background;
     padding: 6px 6px 5px 6px;
 }
 
 .action-bar:backdrop {
-    border-image: none;
-    border: @backdrop_border;
-    box-shadow: none;
-    background-image: none;
+    border: solid @backdrop_border;
+    border-top-width: 1px;
     background-color: @backdrop_background;
 }
 

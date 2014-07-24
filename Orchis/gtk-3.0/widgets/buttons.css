@@ -66,6 +66,7 @@ GtkCalendar.button:backdrop:hover,
 .scale-popup .button:backdrop,
 .scale-popup .button:backdrop:hover,
 .scale-popup .button:backdrop:insensitive {
+  border: 1px solid;
   border-color: transparent;
   background-color: transparent;
   background-image: none;
@@ -76,32 +77,26 @@ GtkCalendar.button:backdrop:hover,
 
 .button:focus,
 .button:hover {
-
-    color: @text;
-
     background-image: linear-gradient(to bottom,
                                   @button_gradient_a,
                                   @button_gradient_b
                                   );
-    
-    box-shadow: inset 0 0 0 1px alpha(@base, 0.05),
-                inset 0 1px 0 0 alpha(@base, 0.45),
-                inset 0 -1px 0 0 alpha(@base, 0.15);
 }
 
 
 /* Active/Pressed Button */
 .button:active {
-
-    color: @text;
-
     background-image: linear-gradient(to bottom,
                                   @button_active_gradient_a,
                                   @button_active_gradient_b
                                   );
-    box-shadow: inset 0 0 0 1px alpha(@base, 0.05),
-                inset 0 1px 0 0 alpha(@base, 0.45),
-                inset 0 -1px 0 0 alpha(@base, 0.15);
+}
+/* Active/Pressed Button */
+.button:active:hover {
+    background-image: linear-gradient(to bottom,
+                                  shade(@button_active_gradient_a, 1.05),
+                                  shade(@button_active_gradient_b, 1.05)
+                                  );
 }
 
 
@@ -163,6 +158,10 @@ GtkCalendar.button:backdrop:hover,
                               @button_active_gradient_a,
                               @button_active_gradient_b
                               );
+}
+
+/* Flat Button */
+.button.flat:active {
 }
 
 /****************************
