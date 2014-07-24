@@ -28,7 +28,7 @@ XfceHeading,
 }
 
 .xfce4-panel .button:active {
-    background-color: @panel_bg_color;
+    background-color: shade(@panel_bg_color, 0.9);
     background-image: none;
     border: none;
     color: @panel_fg_color;
@@ -39,7 +39,7 @@ XfceHeading,
 
 .xfce4-panel .button:hover,
 .xfce4-panel .button:active:hover {
-    background-color: @selected_bg_color;
+    background-color: shade(@panel_bg_color, 1.1);
     background-image: none;
     border: none;
     color: @panel_fg_color;
