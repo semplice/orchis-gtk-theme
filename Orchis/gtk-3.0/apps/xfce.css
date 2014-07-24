@@ -12,6 +12,9 @@ XfceHeading,
     background-color: @panel_bg_color;
     color: @panel_fg_color;
     font: normal;
+    text-shadow: none;
+    icon-shadow: none;
+    -gtk-image-effect: none;
 }
 
 .xfce4-panel .button {
@@ -19,6 +22,8 @@ XfceHeading,
     border-radius: 0;
     border-style: none;
     color: @panel_fg_color;
+    text-shadow: none;
+    icon-shadow: none;
 }
 
 .xfce4-panel .button:active {
