@@ -9,6 +9,7 @@ XfceHeading,
 }
 
 .xfce4-panel {
+    background-color: @panel_bg_color;
     color: @panel_fg_color;
     font: normal;
     text-shadow: none;
@@ -22,6 +23,7 @@ XfceHeading,
     border-style: none;
     color: @panel_fg_color;
     text-shadow: none;
+    box-shadow: none;
     icon-shadow: none;
 }
 
@@ -30,14 +32,20 @@ XfceHeading,
     background-image: none;
     border: none;
     color: @panel_fg_color;
+    text-shadow: none;
+    box-shadow: none;
+    icon-shadow: none;
 }
 
 .xfce4-panel .button:hover,
 .xfce4-panel .button:active:hover {
-    background-color: shade(@panel_bg_color, 1.08);
+    background-color: @selected_bg_color;
     background-image: none;
     border: none;
     color: @panel_fg_color;
+    text-shadow: none;
+    box-shadow: none;
+    icon-shadow: none;
 }
 
 .xfce4-panel .menu {
