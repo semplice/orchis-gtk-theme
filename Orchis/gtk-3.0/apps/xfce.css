@@ -27,16 +27,20 @@ XfceHeading,
 }
 
 .xfce4-panel .button:active {
+    border-radius: 4px 4px 0px 0px;
+    border-bottom: 0px;
+    border: 1px solid shade(@panel_bg_color, 0.7);
     background-color: shade(@panel_bg_color, 0.8);
-    background-image: none;
-    color: @panel_fg_color;
+    color: white;
 }
 
 .xfce4-panel .button:hover,
 .xfce4-panel .button:active:hover {
-    background-color: mix(@panel_bg_color, @panel_fg_color, 0.21);
-    background-image: none;
-    color: shade(@panel_fg_color, 1.08);
+    border-radius: 4px 4px 0px 0px;
+    border-bottom: 0px;
+    border: 1px solid shade(@panel_bg_color, 1.1);
+    background-color: shade(@panel_bg_color, 1.05);
+    color: white;
 }
 
 .xfce4-panel .menu {
