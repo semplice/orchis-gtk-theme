@@ -24,7 +24,7 @@ XfceHeading {
     margin: 0;
     padding: 0;
     border-width: 0;
-    background-color: @base;
+    background-color: @background;
     background-image: none;
     color: @text;
 }
