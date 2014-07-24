@@ -34,7 +34,7 @@ XfceHeading {
     color: @panel_text;
     font: normal;
     text-shadow: 0 1px @panel_text_shadow;
-    icon-shadow: 0 1px @panel_text_shadow;
+    icon-shadow: none;
 }
 
 .xfce4-panel .button {
