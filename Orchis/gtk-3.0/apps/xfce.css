@@ -21,7 +21,7 @@ XfceHeading,
     padding-left: 4px;
     padding-right: 4px;
     border-radius: 0;
-    border-style: none;
+    border: none;
     color: @panel_fg_color;
     text-shadow: none;
     icon-shadow: none;
@@ -31,17 +31,23 @@ XfceHeading,
     padding-left: 4px;
     padding-right: 4px;
     border-radius: 2px 2px 0px 0px;
+    border: none;
     background-color: shade(@panel_bg_color, 0.8);
     color: white;
+    text-shadow: none;
+    icon-shadow: none;
 }
 
 .xfce4-panel .button:hover,
 .xfce4-panel .button:active:hover {
+    border: none;
     padding-left: 4px;
     padding-right: 4px;
     border-radius: 2px 2px 0px 0px;
     background-color: shade(@panel_bg_color, 1.05);
     color: white;
+    text-shadow: none;
+    icon-shadow: none;
 }
 
 .xfce4-panel .menu {
