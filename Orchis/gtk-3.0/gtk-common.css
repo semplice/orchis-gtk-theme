@@ -71,7 +71,9 @@
   ***************/
 
 @define-color theme_base @base;
+@define-color theme_base_color @base;
 
+@define-color theme_bg_color @background;
 @define-color theme_background @background;
 @define-color bg_color @background;
 @define-color theme_foreground @foreground;
@@ -80,6 +82,10 @@
 @define-color theme_selected_foreground @selected_foreground;
 
 @define-color theme_text @text;
+@define-color theme_text_color @text;
+
+@define-color panel_bg_color @panel;
+@define-color panel_fg_color @panel_text;
 
 /*****************
  * Button colors *
