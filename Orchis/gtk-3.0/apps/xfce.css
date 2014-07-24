@@ -32,7 +32,6 @@ XfceHeading,
     padding-right: 4px;
     border-radius: 2px 2px 0px 0px;
     border: none;
-    background-color: @panel_bg_color;
     color: white;
     text-shadow: none;
     icon-shadow: none;
@@ -44,7 +43,6 @@ XfceHeading,
     padding-left: 4px;
     padding-right: 4px;
     border-radius: 2px 2px 0px 0px;
-    background-color: @panel_bg_color;
     color: white;
     text-shadow: none;
     icon-shadow: none;
