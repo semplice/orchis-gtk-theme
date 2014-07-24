@@ -1,6 +1,6 @@
 # Orchis | GTK2
 
-gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#555\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#A348B1\nselected_fg_color:#FFFFFF\ntext_color:#555555\nbg_color:#EFEFEF\ninsensitive_bg_color:#efefef\ntooltip_bg_color:#333333"
+gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#555\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#A348B1\nselected_fg_color:#FFFFFF\ntext_color:#555555\nbg_color:#EFEFEF\ninsensitive_bg_color:#efefef\ntooltip_bg_color:#333333\npanel_bg_color:464346"
 
 gtk-auto-mnemonics              = 1
 gtk-primary-button-warps-slider = 1
