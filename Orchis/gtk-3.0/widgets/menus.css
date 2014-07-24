@@ -100,7 +100,7 @@ GtkTreeMenu .menuitem {
 
 /* Arrow color */
 .menuitem.arrow {
-    background-color: @background;
+    background-color: @base;
     color: @text;
     border: none;
 }

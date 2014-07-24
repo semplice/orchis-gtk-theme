@@ -76,9 +76,11 @@
 @define-color theme_bg_color @background;
 @define-color theme_background @background;
 @define-color bg_color @background;
+@define-color fg_color @text;
 @define-color theme_foreground @foreground;
 
 @define-color theme_selected_background @selected_background;
+@define-color selected_bg_color @selected_background;
 @define-color theme_selected_foreground @selected_foreground;
 
 @define-color theme_text @text;
