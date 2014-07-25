@@ -124,7 +124,7 @@ class "*Xfce*Panel*"			style "theme-panel"
 widget "*WnckPager*"			style "workspace-switcher"
 
 # Fix gtk-entries in the panel
-class "GtkEntry"			style "combo"
+class "GtkEntry"			    style "combo"
 class "*SexyIconEntry*"			style:highest "combo"	# fixes dict-plugin
 widget "*xfce4-verve-plugin*GtkEntry"	style:highest "combo"	# fixes verve-plugin
 
