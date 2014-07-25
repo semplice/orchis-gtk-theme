@@ -15,7 +15,7 @@
 
 Name:		orchis-gtk-theme
 Version:	3.0
-Release:	9
+Release:	10
 
 Summary:	Orchis GTK Theme
 License:    GPL-3.0+ or CC-BY-SA-3.0
@@ -24,7 +24,6 @@ Group:      System/GUI/GNOME
 Url:        http://www.mokaproject.com/orchis-gtk-theme
 Source0:	%{name}-%{version}.tar.gz
 
-Requires:	gtk-murrine-engine
 BuildArch:	noarch
 
 
@@ -39,9 +38,7 @@ Orchis GTK3 Theme
 %install
 install -dpm 0755 $RPM_BUILD_ROOT%{_datadir}/themes/
 cp -a Orchis/ $RPM_BUILD_ROOT%{_datadir}/themes/
-cp -a Orchis-Dark/ $RPM_BUILD_ROOT%{_datadir}/themes/
 
 %files
 %doc AUTHORS LICENSE
 %{_datadir}/themes/Orchis/
-%{_datadir}/themes/Orchis-Dark/

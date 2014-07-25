@@ -39,12 +39,9 @@ esac
 function main {
 if [ "$UID" -eq "$ROOT_UID" ];then
 	rm -Rf /usr/share/themes/Orchis 2>/dev/null
-	rm -Rf /usr/share/themes/Orchis-Dark 2>/dev/null
 else
 	rm -Rf $HOME/.local/share/themes/Orchis 2>/dev/null
-	rm -Rf $HOME/.local/share/themes/Orchis-Dark 2>/dev/null
 	rm -Rf $HOME/.themes/Orchis 2>/dev/null
-	rm -Rf $HOME/.themes/Orchis-Dark 2>/dev/null
 fi
 echo
 echo "Uninstallation complete."
