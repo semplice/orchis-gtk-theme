@@ -52,6 +52,8 @@ GtkComboBox.combobox-entry .button,
 }
 
 /* focused element borders */
+.button:focus,
+.primary-toolbar .button:focus,
 .entry:focus,
 GtkComboBox.combobox-entry .entry:focus,
 .button.default:active,

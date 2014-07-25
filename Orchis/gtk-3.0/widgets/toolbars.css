@@ -210,7 +210,9 @@ GtkToolbar:backdrop {
 
 /* Buttons Active */
 .primary-toolbar GtkComboBox:active,
+.primary-toolbar GtkComboBox:focus,
 .primary-toolbar .button:active,
+.primary-toolbar .button:focus,
 .primary-toolbar .button.image-button:active {
     background-image: linear-gradient(to bottom,
                                   @button_active_gradient_a,
