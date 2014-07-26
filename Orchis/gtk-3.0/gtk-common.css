@@ -117,6 +117,10 @@
 /**************
  * Scrollbars *
  **************/
+@define-color scrollbar_slider shade(@text,1.2);
+@define-color scrollbar_slider_backdrop shade(@scrollbar_slider,0.95);
+@define-color scrollbar_slider_insensitive shade(@scrollbar_slider,1.05);
+
 @define-color scrollbar_trough shade(@background,0.8);
 @define-color scrollbar_trough_insensitive shade(@insensitive_background,0.95);
 @define-color scrollbar_trough_backdrop shade(@backdrop_background,0.95);

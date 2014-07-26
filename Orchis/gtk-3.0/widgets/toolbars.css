@@ -178,6 +178,8 @@ GtkToolbar:backdrop {
 .primary-toolbar.toolbar:backdrop,
 .primary-toolbar .toolbar:backdrop {
     border: solid @backdrop_border;
+    padding: 3px 6px 3px 6px;
+    border-top-width: 1px;
     border-bottom-width: 1px;
     background-color: shade(@backdrop_background,0.95);
     background-image: linear-gradient(to bottom,
@@ -191,6 +193,7 @@ GtkToolbar:backdrop {
 
 /* Buttons */
 .primary-toolbar .button.text-button {
+    background: none;
     padding-top: 2px;
     padding-left: 4px;
     padding-bottom: 2px;
@@ -203,8 +206,6 @@ GtkToolbar:backdrop {
 .primary-toolbar .button,
 .primary-toolbar .button.image-button {
     color: @text;
-    background-image: none;
-    border: 2px solid transparent;
     box-shadow: none;
 }
 
@@ -264,7 +265,6 @@ GtkToolbar:backdrop {
                                       @button_backdrop_gradient_a,
                                       @button_backdrop_gradient_b
                                       );
-    border: 2px solid transparent;
 }
 
 .primary-toolbar .separator:backdrop,

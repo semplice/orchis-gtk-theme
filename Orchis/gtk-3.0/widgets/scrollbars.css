@@ -50,23 +50,23 @@
 
 .scrollbar.button:active,
 .scrollbar.button:active:hover {
-    background-color: mix(@scrollbar_slider, @scrollbar_trough, 0.8);
+    background-color: mix(@scrollbar_slider, @scrollbar_trough, 0.9);
 }
 
 .scrollbar.button.top:hover {
-    box-shadow: inset 0 -1px mix(@scrollbar_slider, @scrollbar_trough, 0.8);
+    box-shadow: inset 0 -1px mix(@scrollbar_slider, @scrollbar_trough, 0.9);
 }
 
 .scrollbar.button.bottom:hover {
-    box-shadow: inset 0 1px mix(@scrollbar_slider, @scrollbar_trough, 0.8);
+    box-shadow: inset 0 1px mix(@scrollbar_slider, @scrollbar_trough, 0.9);
 }
 
 .scrollbar.button.right:hover {
-    box-shadow: inset 1px 0 mix(@scrollbar_slider, @scrollbar_trough, 0.8);
+    box-shadow: inset 1px 0 mix(@scrollbar_slider, @scrollbar_trough, 0.9);
 }
 
 .scrollbar.button.left:hover {
-    box-shadow: inset -1px 0 mix(@scrollbar_slider, @scrollbar_trough, 0.8);
+    box-shadow: inset -1px 0 mix(@scrollbar_slider, @scrollbar_trough, 0.9);
 }
 
 .scrollbar.button.top:hover:backdrop,
@@ -81,7 +81,7 @@
 }
 
 .scrollbar.button:hover {
-    color: @scrollbar_slider_prelight;
+    color: shade(@scrollbar_slider, 1.05);
 }
 
 .scrollbar.button:insensitive {
@@ -189,10 +189,10 @@ OsThumb:active:backdrop,
 OsScrollbar:active:backdrop,
 OsThumb:backdrop,
 OsScrollbar:backdrop {
-    background-color: @backdrop_foreground;
+    background-color: @backdrop_text;
 }
 
 OsThumb:insensitive,
 OsScrollbar:insensitive {
-    background-color: @insensitive_foreground;
+    background-color: @insensitive_text;
 }

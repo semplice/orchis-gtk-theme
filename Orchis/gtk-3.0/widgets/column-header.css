@@ -20,17 +20,14 @@
  * Column header *
  *****************/
  
-column-header .button {
-    border-width: 0 1px 1px 0;
-    border-radius: 0;
-}
-
 column-header .button,
 column-header .button:active,
 column-header .button:focus,
 column-header .button:active:focus {
     border: solid @border;
-    border-width: 0 1px 1px 0;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
     background-color: @background;
     background-image: none;
 }
@@ -40,7 +37,9 @@ column-header .button:active:hover,
 column-header .button:hover:focus,
 column-header .button:active:hover:focus {
     border: solid @border;
-    border-width: 0 1px 1px 0;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
     background-color: shade(@background,1.02);
     background-image: none;
 }

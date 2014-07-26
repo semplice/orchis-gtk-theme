@@ -152,6 +152,9 @@ GtkTreeMenu .menuitem {
     background-image: none;
     color: @text;
 }
+.menubar:backdrop {
+    background-color: @backdrop_background;
+}
 
 .menubar.menuitem,
 .menubar .menuitem {

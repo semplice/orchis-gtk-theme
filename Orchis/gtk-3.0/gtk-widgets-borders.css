@@ -24,6 +24,8 @@
 .entry,
 GtkComboBox.combobox-entry .entry,
 GtkComboBox.combobox-entry .button,
+.toolbar .button,
+.toolbar .button:active,
 .button:active,
 .button:insensitive,
 .button.default:insensitive,
@@ -53,7 +55,6 @@ GtkComboBox.combobox-entry .button,
 
 /* focused element borders */
 .button:focus,
-.primary-toolbar .button:focus,
 .entry:focus,
 GtkComboBox.combobox-entry .entry:focus,
 .button.default:active,
@@ -106,6 +107,10 @@ GtkComboBox.combobox-entry .entry:focus,
 .primary-toolbar .entry,
 .primary-toolbar GtkComboBox.combobox-entry .entry,
 .primary-toolbar GtkComboBox.combobox-entry .button,
+.primary-toolbar GtkComboBox,
+.primary-toolbar .button,
+.primary-toolbar .button.image-button,
+.primary-toolbar .button.text-button,
 .primary-toolbar .button.raised:active,
 .primary-toolbar .raised .button:active,
 .primary-toolbar .button:hover,
@@ -132,6 +137,7 @@ GtkComboBox.combobox-entry .entry:focus,
 .primary-toolbar .button:active,
 .primary-toolbar .button.image-button:active
 .primary-toolbar .entry:focus,
+.primary-toolbar .button:focus,
 .primary-toolbar GtkComboBox.combobox-entry .entry:focus,
 .primary-toolbar .button.raised.default:active,
 .primary-toolbar .raised .button.default:active,
@@ -241,7 +247,7 @@ GtkComboBox.combobox-entry .button:backdrop,
 .destructive-action.button:backdrop {
     border-image: -gtk-scaled (url("borders/generic-border-backdrop.png"),url("borders/generic-border-backdrop@2.png")) 4 3 4 3 / 4px 3px 4px 3px stretch;
     border-radius: 3px;
-    border-width: 1px 1px 2px 1px;
+    border-width: 2px 1px 2px 1px;
     border-style: solid;
     border-color: transparent;
 }
