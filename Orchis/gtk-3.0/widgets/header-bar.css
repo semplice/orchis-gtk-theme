@@ -40,6 +40,8 @@
     padding-left: 6px;
     padding-bottom: 4px;
     padding-right: 6px;
+    border: solid transparent;
+    border-bottom-width: 1px;
 }
 
 .header-bar:backdrop,
