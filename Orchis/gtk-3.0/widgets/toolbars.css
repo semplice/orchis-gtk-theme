@@ -179,7 +179,7 @@ GtkToolbar:backdrop {
 .primary-toolbar .toolbar:backdrop {
     border: solid @backdrop_border;
     padding: 3px 6px 3px 6px;
-    border-top-width: 1px;
+    border-top-width: 0;
     border-bottom-width: 1px;
     background-color: shade(@backdrop_background,0.95);
     background-image: linear-gradient(to bottom,
@@ -213,7 +213,6 @@ GtkToolbar:backdrop {
 .primary-toolbar GtkComboBox:active,
 .primary-toolbar GtkComboBox:focus,
 .primary-toolbar .button:active,
-.primary-toolbar .button:focus,
 .primary-toolbar .button.image-button:active {
     background-image: linear-gradient(to bottom,
                                   @button_active_gradient_a,
