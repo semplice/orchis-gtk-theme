@@ -98,11 +98,11 @@
     <linearGradient
        id="linearGradient3758-2">
       <stop
-         style="stop-color:#333333;stop-opacity:1;"
+         style="stop-color:#555555;stop-opacity:1;"
          offset="0"
          id="stop3760-5" />
       <stop
-         style="stop-color:#333333;stop-opacity:1;"
+         style="stop-color:#555555;stop-opacity:1;"
          offset="1"
          id="stop3762-3" />
     </linearGradient>
@@ -120,11 +120,11 @@
     <linearGradient
        id="linearGradient3758-4">
       <stop
-         style="stop-color:#1b2021;stop-opacity:1;"
+         style="stop-color:#555555;stop-opacity:1;"
          offset="0"
          id="stop3760-4" />
       <stop
-         style="stop-color:#24282a;stop-opacity:1"
+         style="stop-color:#555555;stop-opacity:1;"
          offset="1"
          id="stop3762-5" />
     </linearGradient>
@@ -248,16 +248,16 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="50.815454"
-     inkscape:cy="149.51242"
+     inkscape:cx="65.657725"
+     inkscape:cy="83.817756"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="false"
      showborder="true"
      inkscape:window-width="1364"
-     inkscape:window-height="701"
+     inkscape:window-height="700"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="28"
      inkscape:window-maximized="1"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
@@ -720,7 +720,7 @@
          inkscape:radius="0"
          inkscape:original="M 495 8.5 C 493.615 8.5 492.5 9.615 492.5 11 L 492.5 20 C 492.5 21.385 493.615 22.5 495 22.5 L 505 22.5 C 506.385 22.5 507.5 21.385 507.5 20 L 507.5 11 C 507.5 9.615 506.385 8.5 505 8.5 L 495 8.5 z "
          xlink:href="#rect17861"
-         style="color:#000000;fill:none;stroke:#4e2a53;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:none;stroke:#8f359c;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="path4059-8-1"
          inkscape:href="#rect17861"
          d="m 495,8.5 c -1.385,0 -2.5,1.115 -2.5,2.5 l 0,9 c 0,1.385 1.115,2.5 2.5,2.5 l 10,0 c 1.385,0 2.5,-1.115 2.5,-2.5 l 0,-9 c 0,-1.385 -1.115,-2.5 -2.5,-2.5 l -10,0 z"

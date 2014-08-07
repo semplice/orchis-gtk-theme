@@ -21,7 +21,9 @@
  * Buttons *
  ***********/
  
-.button {
+.button,
+.button.text-button,
+.button.image-button {
     -GtkWidget-focus-padding: 0;
     -GtkWidget-focus-line-width: 0;
     

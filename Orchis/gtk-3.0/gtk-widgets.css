@@ -49,7 +49,7 @@
 
     -WnckTasklist-fade-overlay-rect: 0;
 
-    -GtkWidget-focus-padding: 2;
+    -GtkWidget-focus-padding: 0;
     -GtkWidget-focus-line-width: 1;
     -GtkWindow-resize-grip-width: 0;
     -GtkWindow-resize-grip-height: 0;  
@@ -59,7 +59,7 @@
     outline-offset: 2px;
 
     color: inherit;
-    /*background-color: inherit;*/
+    background-color: inherit;
 }
 
 /* Import Widget CSS */

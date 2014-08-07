@@ -64,6 +64,12 @@ GtkComboBox .separator {
     -GtkWidget-vertical-separator: 0;
 }
 
+GtkComboBox .arrow {
+    background-color: transparent;
+    border: none;
+    color: @text;
+}
+
 
 /******************
  * Combobox Entry *

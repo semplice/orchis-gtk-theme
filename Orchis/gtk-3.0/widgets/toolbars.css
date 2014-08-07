@@ -58,21 +58,8 @@ GtkToolbar:backdrop {
     -gtk-image-effect: dim;
 }
 
-/* Button Padding */
-.toolbar .button.text-button {
-    padding: 2px 16px;
-}
-
-.toolbar .button.image-button {
-    padding-top: 4px;
-    padding-left: 4px;
-    padding-bottom: 4px;
-    padding-right: 4px;
-}
-
 .toolbar GtkComboBox,
 .toolbar .button {
-
 
     background-image: linear-gradient(to bottom,
                                   @button_gradient_a,
@@ -194,10 +181,6 @@ GtkToolbar:backdrop {
 /* Buttons */
 .primary-toolbar .button.text-button {
     background: none;
-    padding-top: 2px;
-    padding-left: 4px;
-    padding-bottom: 2px;
-    padding-right: 4px;
     color: @text;
     box-shadow: none;
 }
@@ -247,7 +230,6 @@ GtkToolbar:backdrop {
                                       @button_insensitive_gradient_a,
                                       @button_insensitive_gradient_b
                                       );
-    border: 2px solid transparent;
 }
 
 .primary-toolbar .separator:insensitive,

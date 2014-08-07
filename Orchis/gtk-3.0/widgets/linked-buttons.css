@@ -28,7 +28,10 @@
                 inset 1px 2px alpha(@selection, 0.1),
                 inset 1px 1px alpha(@selection, 0.1),
                 inset -1px -1px alpha(@selection, 0.2);
+}
 
+.linked .entry:backdrop {
+    box-shadow: none;
 }
 
 .linked .entry:focus:first-child {
@@ -36,7 +39,6 @@
                 inset 1px 2px alpha(@selection, 0.1),
                 inset 1px 1px alpha(@selection, 0.1),
                 inset -1px -1px alpha(@selection, 0.2);
-
 }
 
 .linked .entry:focus:last-child {
@@ -44,7 +46,6 @@
                 inset 1px 2px alpha(@selection, 0.1),
                 inset 1px 1px alpha(@selection, 0.1),
                 inset -1px -1px alpha(@selection, 0.2);
-
 }
 
 /* Set up shadows and hilights for button visual separation */
@@ -79,6 +80,14 @@
 .inline-toolbar.toolbar GtkToolButton > .button:active {
     box-shadow: inset 0 1px 1px alpha(#000, 0.1),
                 inset 1px 0 @inset_dark;
+}
+
+.linked .button:active:backdrop,
+.toolbar .button.raised.linked:active:backdrop,
+.toolbar .raised.linked .button:active:backdrop,
+.inline-toolbar.toolbar .button:active:backdrop,
+.inline-toolbar.toolbar GtkToolButton > .button:active:backdrop {
+    box-shadow: none;
 }
 
 .linked .button:insensitive,

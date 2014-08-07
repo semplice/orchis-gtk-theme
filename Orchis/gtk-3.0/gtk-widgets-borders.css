@@ -155,7 +155,7 @@ GtkComboBox.combobox-entry .entry:focus,
 .inline-toolbar.toolbar .button,
 .primary-toolbar GtkComboBox .button {
     border-image: -gtk-scaled(url("borders/primary-toolbar-button-border.png"),url("borders/primary-toolbar-button-border@2.png")) 4 / 4px stretch;
-    border-radius: 3px;
+    border-radius: 3px;z
     border-width: 2px;
     border-style: solid;
     border-color: transparent;
@@ -171,65 +171,6 @@ GtkComboBox.combobox-entry .entry:focus,
     border-style: solid;
     border-color: transparent;
 }
-
-/* column-headers borders */
-column-header.button,
-column-header .button,
-column-header.button:active,
-column-header .button:active,
-column-header.button:active:hover,
-column-header .button:active:hover,
-column-header.button:backdrop,
-column-header .button:backdrop,
-column-header.button:insensitive,
-column-header .button:insensitive,
-column-header.button:last-child:backdrop,
-column-header:last-child .button:backdrop {
-    border-width: 0 1px 1px 0;
-    border-radius: 0;
-    border-style: solid;
-    border-color: transparent;
-}
-
-column-header.button,
-column-header .button,
-column-header.button:active,
-column-header .button:active,
-column-header.button:active:hover,
-column-header .button:active:hover,
-column-header .button.dnd {
-    border-image: linear-gradient(to top,
-                                  mix(@border, @base, 0.5),
-                                  @base
-                                  ) 0 1 1 0;
-}
-
-column-header.button:backdrop,
-column-header .button:backdrop,
-column-header.button:last-child:backdrop,
-column-header:last-child .button:backdrop {
-    border-image: none;
-}
-
-column-header.button:insensitive,
-column-header .button:insensitive {
-    border-image: linear-gradient(to top,
-                                  mix(@insensitive_border, @insensitive_background, 0.5),
-                                  @insensitive_background
-                                  ) 0 1 1 0;
-}
-
-column-header.button:last-child,
-column-header:last-child .button,
-column-header.button:last-child:active,
-column-header:last-child .button:active,
-column-header.button:last-child:active:hover,
-column-header:last-child .button:active:hover,
-column-header.button:last-child:backdrop,
-column-header:last-child .button:backdrop {
-    border-right-width: 0;
-}
-
 
 /* unfocused window: generic element borders */
 .button:backdrop,
