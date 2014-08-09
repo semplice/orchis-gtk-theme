@@ -58,13 +58,13 @@ BirdieWidgetsTweetList * {
 
 .gala-notification {
     border-width: 0;
-    border-radius: 8px;
+    border-radius: 9px;
     color: white;
-    background-color: alpha (@foreground, 0.98);
-    box-shadow: inset 0 0 0 1px alpha (#fff, 0.1),
+    background-color: alpha(#555, 0.98);
+    box-shadow: inset 0 0 0 1px alpha (#fff, 0.2),
                 inset 0 1px 0 0 alpha (#fff, 0.15),
                 inset 0 -1px 0 0 alpha (#fff, 0.10),
-                0 0 0 1px alpha (#000, 0.5),
+                0 0 0 1px alpha (#000, 0.7),
                 0 2px 7px 0 alpha (#000, 0.35);
 }
 
