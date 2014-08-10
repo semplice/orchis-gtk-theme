@@ -38,6 +38,7 @@ Orchis GTK3 Theme
 %install
 install -dpm 0755 $RPM_BUILD_ROOT%{_datadir}/themes/
 cp -a Orchis/ $RPM_BUILD_ROOT%{_datadir}/themes/
+cp -a Orchis-Dark / $RPM_BUILD_ROOT%{_datadir}/themes/
 
 %files
 %doc AUTHORS LICENSE

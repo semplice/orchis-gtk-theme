@@ -43,6 +43,7 @@ if [ "$UID" -eq "$ROOT_UID" ];then
 		case $INPUT in
 		[Yy]* ) 
 			rm -Rf /usr/share/themes/Orchis 2>/dev/null
+			rm -Rf /usr/share/themes/Orchis-Dark 2>/dev/null
 			;;
 		[Nn]* )
 			;;
@@ -54,6 +55,8 @@ if [ "$UID" -eq "$ROOT_UID" ];then
 	fi
 	cp -R ./Orchis/ /usr/share/themes/
 	chmod -R 755 /usr/share/themes/Orchis
+	cp -R ./Orchis-Dark/ /usr/share/themes/
+	chmod -R 755 /usr/share/themes/Orchis-Dark
 	echo "Installation complete!"
 	set
 elif [ "$UID" -ne "$ROOT_UID" ];then
@@ -63,6 +66,9 @@ elif [ "$UID" -ne "$ROOT_UID" ];then
 		case $INPUT in
 		[Yy]* ) 
 			rm -Rf "$HOME/.local/share/themes/Orchis" 2>/dev/null
+			rm -Rf "$HOME/.themes/Orchis-Dark" 2>/dev/null
+			rm -Rf "$HOME/.local/share/themes/Orchis" 2>/dev/null
+			rm -Rf "$HOME/.themes/Orchis-Dark" 2>/dev/null
 			;;
 		[Nn]* )
 			;;		
@@ -72,7 +78,10 @@ elif [ "$UID" -ne "$ROOT_UID" ];then
 		    ;;
 		esac
 	fi
+	cp -R ./Orchis/ $HOME/.themes/
+	cp -R ./Orchis-Dark/ $HOME/.themes/
 	cp -R ./Orchis/ $HOME/.local/share/themes/
+	cp -R ./Orchis-Dark/ $HOME/.local/share/themes/
 	echo "Installation complete!"
 	set
 fi
@@ -89,9 +98,29 @@ esac
 }
 
 function settheme {
+echo ''
+echo '1. Dark window borders'
+echo '2. Light window borders'
+echo ''
+read -p 'Which window decorations you like (Enter your choice) : ' REPLY
+case $REPLY in
+# Theme Choice
+1)	
+	echo "Setting Orchis-Dark as GTK window theme..."
+	gsettings set org.gnome.desktop.wm.preferences theme "Orchis-Dark"
+	echo "Done."
+	;;
+2)	
+	echo "Setting Orchis as GTK window theme..."
+	gsettings set org.gnome.desktop.wm.preferences theme "Orchis"
+	echo "Done."
+	;;
+# Invalid choice
+* ) 
+    clear && echo 'Not an option, try again.' && settheme;;
+esac
 echo "Setting Orchis as desktop GTK theme..."
 gsettings set org.gnome.desktop.interface gtk-theme "Orchis"
-gsettings set org.gnome.desktop.wm.preferences theme "Orchis"
 echo "Done."
 end
 }

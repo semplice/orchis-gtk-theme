@@ -22,8 +22,11 @@ package() {
 
   # create theme dirs
   install -d -m 755 "$pkgdir"/usr/share/themes/Orchis
+  install -d -m 755 "$pkgdir"/usr/share/themes/Orchis-Dark
 
   # install theme
   cd $srcdir/orchis-gtk-theme/Orchis
   cp -r . "$pkgdir"/usr/share/themes/Orchis/
+  cd $srcdir/orchis-gtk-theme/Orchis-Dark
+  cp -r . "$pkgdir"/usr/share/themes/Orchis-Dark/
 }
