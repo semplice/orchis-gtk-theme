@@ -1,0 +1,13 @@
+Source: orchis-gtk-theme
+Section: gnome
+Priority: optional
+Maintainer: Sam Hewitt <hewittsamuel@gmail.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.2
+Homepage: https://github.com/moka-project/orchis-gtk-theme
+
+Package: orchis-gtk-theme
+Architecture: all
+Depends: ${misc:Depends}
+Description: Orchis GTK Theme
+ Orchis GTK theme.
