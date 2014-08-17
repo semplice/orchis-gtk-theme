@@ -1,3 +1,11 @@
+orchis-gtk-theme (3.0+semplice0) unstable; urgency=medium
+
+  * Initial upload to Semplice.
+  * This is orchis-gtk-theme, modified to take advantage of
+    @vera-color.
+
+ -- Eugenio Paolantonio (g7) <me@medesimo.eu>  Sun, 17 Aug 2014 23:52:22 +0200
+
 orchis-gtk-theme (3.0) UNRELEASED; urgency=low
 
   * 3.0 Release - major revisions and refinements.
