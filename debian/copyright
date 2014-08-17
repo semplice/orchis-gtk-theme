@@ -5,6 +5,13 @@ Source: https://launchpad.net/orchis-gtk-theme/+download
 
 Files: *
 Copyright: 2014, Sam Hewitt <hewittsamuel@gmail.com>
+           2014, Eugenio "g7" Paolantonio <me@medesimo.eu> (minor modifications)
+License: GPL-3+
+
+Files: debian/*
+Copyright: 2014, Sam Hewitt <hewittsamuel@gmail.com>
+           2014, Eugenio "g7" Paolantonio <me@medesimo.eu>
+License: GPL-3+
 
 License: GPL-3+
  This program is free software: you can redistribute it and/or modify

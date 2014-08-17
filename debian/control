@@ -1,13 +1,19 @@
 Source: orchis-gtk-theme
-Section: gnome
+Section: x11
 Priority: optional
-Maintainer: Sam Hewitt <hewittsamuel@gmail.com>
+Maintainer: Eugenio "g7" Paolantonio <me@medesimo.eu>
+XSBC-Original-Maintainer: Sam Hewitt <hewittsamuel@gmail.com>
 Build-Depends: debhelper (>= 7)
 Standards-Version: 3.9.2
-Homepage: https://github.com/moka-project/orchis-gtk-theme
+Homepage: https://github.com/moka/orchis-gtk-theme
+Vcs-Git: git://github.com/semplice/orchis-gtk-theme
+Vcs-Browser: https://github.com/semplice/orchis-gtk-theme
 
 Package: orchis-gtk-theme
 Architecture: all
 Depends: ${misc:Depends}
-Description: Orchis GTK Theme
- Orchis GTK theme.
+Description: Orchis GTK+ Theme (modified for Vera)
+ This package contains the Orchis GTK+ Theme, which is 
+ the default Semplice theme since Semplice 7.
+ .
+ This version is modified to support the @vera-color property.
